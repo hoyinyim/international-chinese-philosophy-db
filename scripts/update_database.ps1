@@ -1,4 +1,4 @@
-Write-Host "STEP 1: Validate JSONL schema..." -ForegroundColor Cyan
+﻿Write-Host "STEP 1: Validate JSONL schema..." -ForegroundColor Cyan
 py scripts\validate_data.py
 
 if ($LASTEXITCODE -ne 0) {
@@ -20,6 +20,15 @@ if ($LASTEXITCODE -ne 0) {
 Write-Host ""
 Write-Host "STEP 3: Build website data..." -ForegroundColor Cyan
 py scripts\build_site_data.py
+Write-Host ""
+Write-Host "STEP 4: Build AI export corpus..." -ForegroundColor Cyan
+py scripts\build_ai_exports.py
+
+if ($LASTEXITCODE -ne 0) {
+    Write-Host ""
+    Write-Host "AI export build failed. Please check build_ai_exports.py or data/ files." -ForegroundColor Red
+    exit 1
+}
 
 if ($LASTEXITCODE -ne 0) {
     Write-Host ""
@@ -28,11 +37,11 @@ if ($LASTEXITCODE -ne 0) {
 }
 
 Write-Host ""
-Write-Host "STEP 4: Show database summary..." -ForegroundColor Cyan
+Write-Host "STEP 5: Show database summary..." -ForegroundColor Cyan
 py scripts\jsonl_summary.py
 
 Write-Host ""
-Write-Host "STEP 5: Show Git status..." -ForegroundColor Cyan
+Write-Host "STEP 6: Show Git status..." -ForegroundColor Cyan
 git status
 
 Write-Host ""

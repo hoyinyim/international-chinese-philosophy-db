@@ -1,5 +1,3 @@
-import { createClient } from "https://esm.sh/@supabase/supabase-js@2";
-
 const corsHeaders = {
   "Access-Control-Allow-Origin": "*",
   "Access-Control-Allow-Headers": "authorization, x-client-info, apikey, content-type, x-gpt-api-key",
@@ -7,12 +5,6 @@ const corsHeaders = {
 };
 
 type SearchMode = "all" | "usage" | "horizon" | "concepts";
-
-interface SearchRequest {
-  query?: string;
-  mode?: SearchMode;
-  limit?: number;
-}
 
 function jsonResponse(body: unknown, status = 200): Response {
   return new Response(JSON.stringify(body, null, 2), {
@@ -29,6 +21,42 @@ function getRpcName(mode: SearchMode): string {
   if (mode === "horizon") return "search_horizon_keyword";
   if (mode === "concepts") return "search_concepts_keyword";
   return "search_chunks_keyword";
+}
+
+function getSupabaseKey(): string {
+  const legacyKey = Deno.env.get("SUPABASE_SERVICE_ROLE_KEY");
+  if (legacyKey && legacyKey.length > 0) {
+    return legacyKey;
+  }
+
+  const secretKeysJson = Deno.env.get("SUPABASE_SECRET_KEYS");
+  if (!secretKeysJson) {
+    return "";
+  }
+
+  try {
+    const parsed = JSON.parse(secretKeysJson);
+
+    if (typeof parsed === "string") {
+      return parsed;
+    }
+
+    if (parsed && typeof parsed === "object") {
+      const values = Object.values(parsed);
+      for (const value of values) {
+        if (
+          typeof value === "string" &&
+          (value.startsWith("sb_secret_") || value.startsWith("eyJ"))
+        ) {
+          return value;
+        }
+      }
+    }
+  } catch (_error) {
+    return "";
+  }
+
+  return "";
 }
 
 Deno.serve(async (req: Request) => {
@@ -60,58 +88,59 @@ Deno.serve(async (req: Request) => {
     );
   }
 
-  const supabaseUrl = Deno.env.get("SUPABASE_URL");
+  const supabaseUrl = Deno.env.get("SUPABASE_URL") ?? "";
+  const supabaseKey = getSupabaseKey();
 
-function getSupabaseSecretKey(): string | null {
-  const legacyKey = Deno.env.get("SUPABASE_SERVICE_ROLE_KEY");
-  if (legacyKey) {
-    return legacyKey;
+  if (!supabaseUrl || !supabaseKey) {
+    return jsonResponse(
+      {
+        error: "Missing Supabase environment variables.",
+        has_supabase_url: Boolean(supabaseUrl),
+        has_supabase_key: Boolean(supabaseKey),
+      },
+      500,
+    );
   }
 
-  const secretKeysJson = Deno.env.get("SUPABASE_SECRET_KEYS");
-  if (!secretKeysJson) {
-    return null;
-  }
+  let body: {
+    query?: string;
+    mode?: SearchMode;
+    limit?: number;
+  };
 
   try {
-    const parsed = JSON.parse(secretKeysJson);
-
-    if (typeof parsed === "string") {
-      return parsed;
-    }
-
-    if (parsed && typeof parsed === "object") {
-      const values = Object.values(parsed);
-      const secretKey = values.find(
-        (value) =>
-          typeof value === "string" &&
-          (value.startsWith("sb_secret_") || value.startsWith("eyJ")),
-      );
-
-      if (typeof secretKey === "string") {
-        return secretKey;
-      }
-    }
-
-    return null;
+    body = await req.json();
   } catch (_error) {
-    return null;
+    return jsonResponse(
+      {
+        error: "Invalid JSON body.",
+      },
+      400,
+    );
   }
-}
 
-const supabaseSecretKey = getSupabaseSecretKey();
+  const query = String(body.query ?? "").trim();
+  const mode = (body.mode ?? "all") as SearchMode;
+  const limit = Math.min(Math.max(Number(body.limit ?? 10), 1), 30);
 
-if (!supabaseUrl || !supabaseSecretKey) {
-  return jsonResponse(
-    {
-      error: "Missing Supabase environment variables.",
-      hint: "Expected SUPABASE_URL and SUPABASE_SECRET_KEYS or SUPABASE_SERVICE_ROLE_KEY.",
-    },
-    500,
-  );
-}
+  if (!query) {
+    return jsonResponse(
+      {
+        error: "Missing query.",
+      },
+      400,
+    );
+  }
 
-const supabase = createClient(supabaseUrl, supabaseSecretKey);
+  if (!["all", "usage", "horizon", "concepts"].includes(mode)) {
+    return jsonResponse(
+      {
+        error: "Invalid mode. Use all, usage, horizon, or concepts.",
+      },
+      400,
+    );
+  }
+
   const rpcName = getRpcName(mode);
 
   const rpcArgs =
@@ -126,23 +155,53 @@ const supabase = createClient(supabaseUrl, supabaseSecretKey);
           limit_count: limit,
         };
 
-  const { data, error } = await supabase.rpc(rpcName, rpcArgs);
+  const rpcUrl = `${supabaseUrl}/rest/v1/rpc/${rpcName}`;
 
-  if (error) {
+  const rpcResponse = await fetch(rpcUrl, {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json",
+      "apikey": supabaseKey,
+      "Authorization": `Bearer ${supabaseKey}`,
+    },
+    body: JSON.stringify(rpcArgs),
+  });
+
+  const responseText = await rpcResponse.text();
+
+  if (!rpcResponse.ok) {
     return jsonResponse(
       {
-        error: error.message,
-        details: error,
+        error: "Supabase RPC error.",
+        status: rpcResponse.status,
+        rpc_name: rpcName,
+        details: responseText,
       },
       500,
     );
   }
 
+  let data: unknown;
+
+  try {
+    data = JSON.parse(responseText);
+  } catch (_error) {
+    return jsonResponse(
+      {
+        error: "Failed to parse Supabase RPC response.",
+        details: responseText,
+      },
+      500,
+    );
+  }
+
+  const results = Array.isArray(data) ? data : [];
+
   return jsonResponse({
     query,
     mode,
     limit,
-    count: data?.length ?? 0,
-    results: data ?? [],
+    count: results.length,
+    results,
   });
 });

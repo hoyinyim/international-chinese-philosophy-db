@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>國際中國哲學英文期刊資料庫</title>
+  <style>
+    body {
+      font-family: "Noto Serif TC", "Microsoft JhengHei", serif;
+      line-height: 1.8;
+      margin: 0;
+      padding: 0;
+      background: #f7f7f4;
+      color: #222;
+    }
+
+    header {
+      background: #1f2933;
+      color: #fff;
+      padding: 48px 10%;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2rem;
+      letter-spacing: 0.04em;
+    }
+
+    header p {
+      margin-top: 12px;
+      max-width: 900px;
+      color: #d7dde5;
+    }
+
+    main {
+      max-width: 960px;
+      margin: 40px auto;
+      padding: 0 24px 56px;
+    }
+
+    section {
+      background: #fff;
+      padding: 28px 32px;
+      margin-bottom: 24px;
+      border: 1px solid #e0e0dc;
+      border-radius: 10px;
+    }
+
+    h2 {
+      margin-top: 0;
+      color: #1f2933;
+      border-bottom: 2px solid #d5d8dc;
+      padding-bottom: 8px;
+    }
+
+    ul {
+      padding-left: 1.5rem;
+    }
+
+    code {
+      background: #f0f0ed;
+      padding: 2px 6px;
+      border-radius: 4px;
+    }
+
+    footer {
+      padding: 24px 10%;
+      background: #e8e8e3;
+      color: #444;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>國際中國哲學英文期刊資料庫</h1>
+    <p>
+      International Chinese Philosophy Journal Database
+    </p>
+    <p>
+      本網站用於整理國際中國哲學英文期刊閱讀成果，將每日閱讀資料轉化為可累積、可分類、可檢索、可供 AI 工具調用的學術資料。
+    </p>
+  </header>
+
+  <main>
+    <section>
+      <h2>一、專案定位</h2>
+      <p>
+        本專案不是一般讀書筆記，而是面向長期資料庫建置與 AI 調用的學術資料整理系統。資料內容分為「國際中國哲學學術語用」與「國際中國哲學研究視野」兩條主線。
+      </p>
+    </section>
+
+    <section>
+      <h2>二、核心資料庫</h2>
+      <ul>
+        <li><strong>國際中國哲學學術語用資料庫：</strong>保存英文學術論文中的字詞、語塊、句式、論述策略、語境、論證功能與可遷移用法。</li>
+        <li><strong>國際中國哲學研究視野資料庫：</strong>保存論文的研究問題、文本材料、方法進路、學術對話對象、國際學術視野與可延伸問題。</li>
+        <li><strong>中英概念索引：</strong>連結中文概念、英文術語、相關論文、語用資料與研究視野資料。</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>三、目前資料結構</h2>
+      <ul>
+        <li><code>data/papers.jsonl</code>：論文基本資料。</li>
+        <li><code>data/academic_usage.jsonl</code>：學術語用資料。</li>
+        <li><code>data/research_horizon.jsonl</code>：研究視野資料。</li>
+        <li><code>data/concept_index.jsonl</code>：中英概念索引。</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>四、未來 AI 工具</h2>
+      <ul>
+        <li><strong>國際中國哲學語用：</strong>根據中文學術意思，搜尋英文語塊與論述策略，並生成可調整的英文學術句子。</li>
+        <li><strong>國際中國哲學視野勘探：</strong>根據研究主題，搜尋國際中國哲學研究方向、材料、方法與可開發問題。</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    <p>國際中國哲學英文期刊資料庫｜International Chinese Philosophy Journal Database</p>
+  </footer>
+</body>
+</html>

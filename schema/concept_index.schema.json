@@ -1,0 +1,74 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Concept Index Schema",
+  "description": "國際中國哲學資料庫的中英概念索引，用於連結中文概念、英文術語、相關語用資料與研究視野資料。",
+  "type": "object",
+  "required": [
+    "concept_id",
+    "zh_term",
+    "en_terms",
+    "related_zh_terms",
+    "related_en_terms",
+    "linked_paper_ids",
+    "linked_usage_ids",
+    "linked_horizon_ids",
+    "notes"
+  ],
+  "properties": {
+    "concept_id": {
+      "type": "string",
+      "description": "概念唯一識別碼，例如 C0001。"
+    },
+    "zh_term": {
+      "type": "string",
+      "description": "中文核心概念，例如工夫、修身、禮、義、群、德、心、道等。"
+    },
+    "en_terms": {
+      "type": "array",
+      "description": "此中文概念在英文學術論文中常見的對應詞或譯法。",
+      "items": {
+        "type": "string"
+      }
+    },
+    "related_zh_terms": {
+      "type": "array",
+      "description": "相關中文概念，用於建立概念網絡。",
+      "items": {
+        "type": "string"
+      }
+    },
+    "related_en_terms": {
+      "type": "array",
+      "description": "相關英文術語，用於跨語言搜尋與語義延伸。",
+      "items": {
+        "type": "string"
+      }
+    },
+    "linked_paper_ids": {
+      "type": "array",
+      "description": "與此概念相關的論文 ID，對應 papers.jsonl。",
+      "items": {
+        "type": "string"
+      }
+    },
+    "linked_usage_ids": {
+      "type": "array",
+      "description": "與此概念相關的學術語用資料 ID，對應 academic_usage.jsonl。",
+      "items": {
+        "type": "string"
+      }
+    },
+    "linked_horizon_ids": {
+      "type": "array",
+      "description": "與此概念相關的研究視野資料 ID，對應 research_horizon.jsonl。",
+      "items": {
+        "type": "string"
+      }
+    },
+    "notes": {
+      "type": "string",
+      "description": "補充說明，例如此概念在不同研究脈絡中的譯法差異、使用限制或概念史問題。"
+    }
+  },
+  "additionalProperties": false
+}

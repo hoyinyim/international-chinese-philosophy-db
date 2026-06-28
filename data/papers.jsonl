@@ -1,0 +1,1 @@
+{"paper_id":"P20260628-TEST001","date":"2026-06-28","author":"Test Author","title":"Test Article for Database Validation","year":"2026","journal":"Test Journal","doi":"","research_area":["儒家研究","政治哲學與倫理思想"],"keywords_en":["Confucianism","political philosophy"],"keywords_zh":["儒家","政治哲學"],"notes":"這是測試資料，用於確認 JSONL 與 schema 驗證流程。"}

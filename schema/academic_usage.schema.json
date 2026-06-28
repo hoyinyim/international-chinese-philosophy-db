@@ -1,0 +1,105 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Academic Usage Schema",
+  "description": "國際中國哲學英文論文中的學術語用資料，包括英文語塊、句式、論述策略、語境與可遷移用法。",
+  "type": "object",
+  "required": [
+    "usage_id",
+    "paper_id",
+    "date",
+    "author",
+    "title",
+    "year",
+    "source",
+    "original_phrase",
+    "pragmatic_category",
+    "chinese_explanation",
+    "argumentative_function",
+    "why_learnable",
+    "transferable_context",
+    "imitable_pattern",
+    "cautions",
+    "source_location"
+  ],
+  "properties": {
+    "usage_id": {
+      "type": "string",
+      "description": "語用資料唯一識別碼，例如 U20260628-001。"
+    },
+    "paper_id": {
+      "type": "string",
+      "description": "對應 papers.jsonl 中的論文識別碼，例如 P20260628-001。"
+    },
+    "date": {
+      "type": "string",
+      "description": "資料建立日期，格式為 YYYY-MM-DD。"
+    },
+    "author": {
+      "type": "string",
+      "description": "論文作者。"
+    },
+    "title": {
+      "type": "string",
+      "description": "論文題名。"
+    },
+    "year": {
+      "type": "string",
+      "description": "論文出版年份。"
+    },
+    "source": {
+      "type": "string",
+      "description": "期刊、書籍或論文集來源。"
+    },
+    "original_phrase": {
+      "type": "string",
+      "description": "原文語句、語塊或可學習的英文表述。不得大量複製原文。"
+    },
+    "pragmatic_category": {
+      "type": "string",
+      "description": "語用分類。",
+      "enum": [
+        "立場界定",
+        "問題提出",
+        "文獻定位",
+        "概念界定",
+        "論證推進",
+        "轉折與修正",
+        "反駁與批判",
+        "方法說明",
+        "材料處理",
+        "比較與對照",
+        "限制與保留",
+        "結論與貢獻"
+      ]
+    },
+    "chinese_explanation": {
+      "type": "string",
+      "description": "中文語義說明，需貼近原文語境，不可泛泛翻譯。"
+    },
+    "argumentative_function": {
+      "type": "string",
+      "description": "此語句在原文論證中的功能，例如界定立場、修正前說、轉入材料、限定結論等。"
+    },
+    "why_learnable": {
+      "type": "string",
+      "description": "此語用值得學習的原因，需說明其語氣控制、論證位置或學術表達價值。"
+    },
+    "transferable_context": {
+      "type": "string",
+      "description": "可遷移使用的學術情境，例如導論、文獻回顧、概念界定、反駁段落、結論段等。"
+    },
+    "imitable_pattern": {
+      "type": "string",
+      "description": "可仿寫句式，應保留可替換結構。"
+    },
+    "cautions": {
+      "type": "string",
+      "description": "注意事項，包括語氣強弱、適用限制、不可誤用之處。"
+    },
+    "source_location": {
+      "type": "string",
+      "description": "來源位置，例如頁碼、章節、段落，若資料不足則標示尚不足以判定。"
+    }
+  },
+  "additionalProperties": false
+}

@@ -1,0 +1,117 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Research Horizon Schema",
+  "description": "國際中國哲學英文論文的研究視野資料，包括研究主題、研究類別、核心問題、材料、方法、學術對話對象與可延伸問題。",
+  "type": "object",
+  "required": [
+    "horizon_id",
+    "paper_id",
+    "date",
+    "author",
+    "title",
+    "year",
+    "source",
+    "research_topic",
+    "research_category",
+    "core_question",
+    "materials",
+    "method",
+    "scholarly_interlocutors",
+    "main_claim",
+    "international_horizon",
+    "relevance_to_my_research",
+    "extendable_questions",
+    "source_location"
+  ],
+  "properties": {
+    "horizon_id": {
+      "type": "string",
+      "description": "研究視野資料唯一識別碼，例如 H20260628-001。"
+    },
+    "paper_id": {
+      "type": "string",
+      "description": "對應 papers.jsonl 中的論文識別碼，例如 P20260628-001。"
+    },
+    "date": {
+      "type": "string",
+      "description": "資料建立日期，格式為 YYYY-MM-DD。"
+    },
+    "author": {
+      "type": "string",
+      "description": "論文作者。"
+    },
+    "title": {
+      "type": "string",
+      "description": "論文題名。"
+    },
+    "year": {
+      "type": "string",
+      "description": "論文出版年份。"
+    },
+    "source": {
+      "type": "string",
+      "description": "期刊、書籍或論文集來源。"
+    },
+    "research_topic": {
+      "type": "string",
+      "description": "研究主題，例如荀子政治哲學、儒家工夫論、比較哲學方法等。"
+    },
+    "research_category": {
+      "type": "string",
+      "description": "研究類別。",
+      "enum": [
+        "單一哲學概念研究",
+        "文本詮釋與義理重構",
+        "思想史與概念史",
+        "比較哲學：中西比較",
+        "比較哲學：中國內部比較",
+        "儒家研究",
+        "道家研究",
+        "墨家、法家與諸子研究",
+        "經典詮釋與注疏傳統",
+        "出土文獻與傳世文獻對讀",
+        "政治哲學與倫理思想",
+        "修身工夫與實踐哲學",
+        "宗教、宇宙論與形上學",
+        "方法論與中國哲學合法性問題"
+      ]
+    },
+    "core_question": {
+      "type": "string",
+      "description": "文章的核心研究問題。不得只寫研究某概念，需說明作者如何設問。"
+    },
+    "materials": {
+      "type": "string",
+      "description": "文章使用的主要文本、材料、文獻或案例。"
+    },
+    "method": {
+      "type": "string",
+      "description": "文章採用的方法與進路，例如文本詮釋、概念分析、思想史、比較哲學、出土文獻對讀等。"
+    },
+    "scholarly_interlocutors": {
+      "type": "string",
+      "description": "文章回應的學術問題、研究傳統、學者或論辯對象。若資料不足，標示尚不足以判定。"
+    },
+    "main_claim": {
+      "type": "string",
+      "description": "文章主要論點。需根據文章明確內容整理，不得虛構。"
+    },
+    "international_horizon": {
+      "type": "string",
+      "description": "文章所呈現的國際學術視野，包括問題設定、方法風格、比較框架或學術關懷。"
+    },
+    "relevance_to_my_research": {
+      "type": "string",
+      "description": "此文對未來中國哲學研究的可能啟發，包括問題意識、材料、方法或論證策略。"
+    },
+    "extendable_questions": {
+      "type": "string",
+      "description": "可由此文延伸出的研究問題。若只是推測，需標示可推測。"
+    },
+    "source_location": {
+      "type": "string",
+      "description": "來源位置，例如頁碼、章節、段落；若資料不足，標示尚不足以判定。"
+    }
+  },
+  "additionalProperties": false
+}

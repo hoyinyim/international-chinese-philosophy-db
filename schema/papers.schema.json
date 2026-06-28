@@ -1,0 +1,75 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Paper Metadata Schema",
+  "description": "每篇國際中國哲學英文期刊論文的基本書目與分類資料。",
+  "type": "object",
+  "required": [
+    "paper_id",
+    "date",
+    "author",
+    "title",
+    "year",
+    "journal",
+    "doi",
+    "research_area",
+    "keywords_en",
+    "keywords_zh",
+    "notes"
+  ],
+  "properties": {
+    "paper_id": {
+      "type": "string",
+      "description": "論文唯一識別碼，例如 P20260628-001。"
+    },
+    "date": {
+      "type": "string",
+      "description": "資料建立日期，格式為 YYYY-MM-DD。"
+    },
+    "author": {
+      "type": "string",
+      "description": "論文作者。"
+    },
+    "title": {
+      "type": "string",
+      "description": "論文題名。"
+    },
+    "year": {
+      "type": "string",
+      "description": "論文出版年份。"
+    },
+    "journal": {
+      "type": "string",
+      "description": "期刊、論文集或書籍來源。"
+    },
+    "doi": {
+      "type": "string",
+      "description": "DOI 或穩定連結。若無，留空字串。"
+    },
+    "research_area": {
+      "type": "array",
+      "description": "文章所屬研究領域或主題標籤。",
+      "items": {
+        "type": "string"
+      }
+    },
+    "keywords_en": {
+      "type": "array",
+      "description": "英文關鍵詞。",
+      "items": {
+        "type": "string"
+      }
+    },
+    "keywords_zh": {
+      "type": "array",
+      "description": "中文關鍵詞。",
+      "items": {
+        "type": "string"
+      }
+    },
+    "notes": {
+      "type": "string",
+      "description": "補充說明。"
+    }
+  },
+  "additionalProperties": false
+}

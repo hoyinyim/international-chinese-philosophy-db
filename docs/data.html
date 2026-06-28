@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>資料瀏覽｜國際中國哲學英文期刊資料庫</title>
+  <style>
+    body {
+      font-family: "Noto Serif TC", "Microsoft JhengHei", serif;
+      line-height: 1.8;
+      margin: 0;
+      padding: 0;
+      background: #f7f7f4;
+      color: #222;
+    }
+
+    header {
+      background: #1f2933;
+      color: #fff;
+      padding: 40px 10%;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2rem;
+      letter-spacing: 0.04em;
+    }
+
+    header p {
+      margin-top: 12px;
+      max-width: 900px;
+      color: #d7dde5;
+    }
+
+    nav {
+      margin-top: 20px;
+    }
+
+    nav a {
+      display: inline-block;
+      color: #fff;
+      text-decoration: none;
+      border: 1px solid #d7dde5;
+      border-radius: 6px;
+      padding: 6px 12px;
+      margin-right: 8px;
+      margin-bottom: 8px;
+    }
+
+    main {
+      max-width: 1100px;
+      margin: 40px auto;
+      padding: 0 24px 56px;
+    }
+
+    section {
+      background: #fff;
+      padding: 28px 32px;
+      margin-bottom: 24px;
+      border: 1px solid #e0e0dc;
+      border-radius: 10px;
+    }
+
+    h2 {
+      margin-top: 0;
+      color: #1f2933;
+      border-bottom: 2px solid #d5d8dc;
+      padding-bottom: 8px;
+    }
+
+    .toolbar {
+      background: #fff;
+      padding: 20px 24px;
+      margin-bottom: 24px;
+      border: 1px solid #e0e0dc;
+      border-radius: 10px;
+    }
+
+    input[type="search"] {
+      width: 100%;
+      box-sizing: border-box;
+      font-size: 1rem;
+      padding: 10px 12px;
+      border: 1px solid #c9c9c2;
+      border-radius: 6px;
+      font-family: inherit;
+    }
+
+    .record {
+      border: 1px solid #e0e0dc;
+      background: #fafaf7;
+      border-radius: 8px;
+      padding: 18px 20px;
+      margin: 16px 0;
+    }
+
+    .record h3 {
+      margin: 0 0 8px;
+      color: #1f2933;
+      font-size: 1.1rem;
+    }
+
+    .meta {
+      color: #555;
+      font-size: 0.95rem;
+      margin-bottom: 8px;
+    }
+
+    .field {
+      margin: 6px 0;
+    }
+
+    .field strong {
+      color: #333;
+    }
+
+    code {
+      background: #f0f0ed;
+      padding: 2px 6px;
+      border-radius: 4px;
+    }
+
+    .empty {
+      color: #777;
+      font-style: italic;
+    }
+
+    footer {
+      padding: 24px 10%;
+      background: #e8e8e3;
+      color: #444;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>資料瀏覽</h1>
+    <p>國際中國哲學英文期刊資料庫｜International Chinese Philosophy Journal Database</p>
+    <p>
+      本頁讀取 <code>data/site_data.json</code>，用於瀏覽目前資料庫中的論文、語用、研究視野與概念索引資料。
+    </p>
+    <nav>
+      <a href="index.html">首頁</a>
+      <a href="#papers">論文基本資料</a>
+      <a href="#usage">學術語用資料</a>
+      <a href="#horizon">研究視野資料</a>
+      <a href="#concepts">概念索引資料</a>
+    </nav>
+  </header>
+
+  <main>
+    <div class="toolbar">
+      <label for="search-box"><strong>全文搜尋</strong></label>
+      <input id="search-box" type="search" placeholder="輸入作者、題名、概念、英文語塊、研究類別或關鍵詞">
+    </div>
+
+    <section id="papers">
+      <h2>一、論文基本資料</h2>
+      <div id="papers-list"></div>
+    </section>
+
+    <section id="usage">
+      <h2>二、學術語用資料</h2>
+      <div id="usage-list"></div>
+    </section>
+
+    <section id="horizon">
+      <h2>三、研究視野資料</h2>
+      <div id="horizon-list"></div>
+    </section>
+
+    <section id="concepts">
+      <h2>四、概念索引資料</h2>
+      <div id="concepts-list"></div>
+    </section>
+  </main>
+
+  <footer>
+    <p>國際中國哲學英文期刊資料庫｜資料瀏覽頁</p>
+  </footer>
+
+  <script>
+    let siteData = {
+      papers: [],
+      academic_usage: [],
+      research_horizon: [],
+      concept_index: []
+    };
+
+    function escapeHtml(value) {
+      return String(value ?? "")
+        .replaceAll("&", "&amp;")
+        .replaceAll("<", "&lt;")
+        .replaceAll(">", "&gt;")
+        .replaceAll('"', "&quot;")
+        .replaceAll("'", "&#039;");
+    }
+
+    function joinArray(value) {
+      if (Array.isArray(value)) {
+        return value.join("、");
+      }
+      return value ?? "";
+    }
+
+    function recordMatches(record, keyword) {
+      if (!keyword) return true;
+      const text = JSON.stringify(record).toLowerCase();
+      return text.includes(keyword.toLowerCase());
+    }
+
+    function renderPapers(records) {
+      const container = document.getElementById("papers-list");
+
+      if (!records.length) {
+        container.innerHTML = '<p class="empty">目前沒有符合條件的論文基本資料。</p>';
+        return;
+      }
+
+      container.innerHTML = records.map(item => `
+        <article class="record">
+          <h3>${escapeHtml(item.title)}</h3>
+          <div class="meta">
+            ${escapeHtml(item.paper_id)}｜${escapeHtml(item.author)}｜${escapeHtml(item.year)}｜${escapeHtml(item.journal)}
+          </div>
+          <div class="field"><strong>研究領域：</strong>${escapeHtml(joinArray(item.research_area))}</div>
+          <div class="field"><strong>英文關鍵詞：</strong>${escapeHtml(joinArray(item.keywords_en))}</div>
+          <div class="field"><strong>中文關鍵詞：</strong>${escapeHtml(joinArray(item.keywords_zh))}</div>
+          <div class="field"><strong>DOI／連結：</strong>${escapeHtml(item.doi)}</div>
+          <div class="field"><strong>補充說明：</strong>${escapeHtml(item.notes)}</div>
+        </article>
+      `).join("");
+    }
+
+    function renderUsage(records) {
+      const container = document.getElementById("usage-list");
+
+      if (!records.length) {
+        container.innerHTML = '<p class="empty">目前沒有符合條件的學術語用資料。</p>';
+        return;
+      }
+
+      container.innerHTML = records.map(item => `
+        <article class="record">
+          <h3>${escapeHtml(item.original_phrase)}</h3>
+          <div class="meta">
+            ${escapeHtml(item.usage_id)}｜${escapeHtml(item.pragmatic_category)}｜${escapeHtml(item.author)}｜${escapeHtml(item.year)}
+          </div>
+          <div class="field"><strong>中文說明：</strong>${escapeHtml(item.chinese_explanation)}</div>
+          <div class="field"><strong>論證功能：</strong>${escapeHtml(item.argumentative_function)}</div>
+          <div class="field"><strong>值得學習之處：</strong>${escapeHtml(item.why_learnable)}</div>
+          <div class="field"><strong>可使用情境：</strong>${escapeHtml(item.transferable_context)}</div>
+          <div class="field"><strong>可仿寫句式：</strong>${escapeHtml(item.imitable_pattern)}</div>
+          <div class="field"><strong>注意事項：</strong>${escapeHtml(item.cautions)}</div>
+          <div class="field"><strong>來源位置：</strong>${escapeHtml(item.source_location)}</div>
+        </article>
+      `).join("");
+    }
+
+    function renderHorizon(records) {
+      const container = document.getElementById("horizon-list");
+
+      if (!records.length) {
+        container.innerHTML = '<p class="empty">目前沒有符合條件的研究視野資料。</p>';
+        return;
+      }
+
+      container.innerHTML = records.map(item => `
+        <article class="record">
+          <h3>${escapeHtml(item.research_topic)}</h3>
+          <div class="meta">
+            ${escapeHtml(item.horizon_id)}｜${escapeHtml(item.research_category)}｜${escapeHtml(item.author)}｜${escapeHtml(item.year)}
+          </div>
+          <div class="field"><strong>核心問題：</strong>${escapeHtml(item.core_question)}</div>
+          <div class="field"><strong>使用材料：</strong>${escapeHtml(item.materials)}</div>
+          <div class="field"><strong>研究方法：</strong>${escapeHtml(item.method)}</div>
+          <div class="field"><strong>學術對話對象：</strong>${escapeHtml(item.scholarly_interlocutors)}</div>
+          <div class="field"><strong>主要論點：</strong>${escapeHtml(item.main_claim)}</div>
+          <div class="field"><strong>國際學術視野：</strong>${escapeHtml(item.international_horizon)}</div>
+          <div class="field"><strong>對我研究的啟發：</strong>${escapeHtml(item.relevance_to_my_research)}</div>
+          <div class="field"><strong>可延伸問題：</strong>${escapeHtml(item.extendable_questions)}</div>
+        </article>
+      `).join("");
+    }
+
+    function renderConcepts(records) {
+      const container = document.getElementById("concepts-list");
+
+      if (!records.length) {
+        container.innerHTML = '<p class="empty">目前沒有符合條件的概念索引資料。</p>';
+        return;
+      }
+
+      container.innerHTML = records.map(item => `
+        <article class="record">
+          <h3>${escapeHtml(item.zh_term)}</h3>
+          <div class="meta">${escapeHtml(item.concept_id)}</div>
+          <div class="field"><strong>英文術語：</strong>${escapeHtml(joinArray(item.en_terms))}</div>
+          <div class="field"><strong>相關中文概念：</strong>${escapeHtml(joinArray(item.related_zh_terms))}</div>
+          <div class="field"><strong>相關英文術語：</strong>${escapeHtml(joinArray(item.related_en_terms))}</div>
+          <div class="field"><strong>關聯論文 ID：</strong>${escapeHtml(joinArray(item.linked_paper_ids))}</div>
+          <div class="field"><strong>關聯語用 ID：</strong>${escapeHtml(joinArray(item.linked_usage_ids))}</div>
+          <div class="field"><strong>關聯研究視野 ID：</strong>${escapeHtml(joinArray(item.linked_horizon_ids))}</div>
+          <div class="field"><strong>補充說明：</strong>${escapeHtml(item.notes)}</div>
+        </article>
+      `).join("");
+    }
+
+    function renderAll(keyword = "") {
+      renderPapers(siteData.papers.filter(record => recordMatches(record, keyword)));
+      renderUsage(siteData.academic_usage.filter(record => recordMatches(record, keyword)));
+      renderHorizon(siteData.research_horizon.filter(record => recordMatches(record, keyword)));
+      renderConcepts(siteData.concept_index.filter(record => recordMatches(record, keyword)));
+    }
+
+    fetch("data/site_data.json")
+      .then(response => response.json())
+      .then(data => {
+        siteData = data;
+        renderAll();
+      })
+      .catch(error => {
+        console.error("無法讀取網站資料：", error);
+        document.querySelector("main").insertAdjacentHTML(
+          "afterbegin",
+          '<section><p class="empty">無法讀取 data/site_data.json。請確認網站資料是否已建立。</p></section>'
+        );
+      });
+
+    document.getElementById("search-box").addEventListener("input", event => {
+      renderAll(event.target.value.trim());
+    });
+  </script>
+</body>
+</html>

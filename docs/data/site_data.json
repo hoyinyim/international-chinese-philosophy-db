@@ -37,6 +37,43 @@
         "文化"
       ],
       "notes": "正式資料第一篇。本文處理勞思光如何由黑格爾文化哲學轉向 double-structured theory，並討論為何不宜將其簡化為 Chinese philosopher 或 New Confucian。"
+    },
+    {
+      "paper_id": "P20260628-LI2022",
+      "date": "2026-06-28",
+      "author": "Cunshan Li",
+      "title": "The Heaven-Earth Cosmic Faith and the Universality of Confucian Ethics",
+      "year": "2022",
+      "journal": "International Confucian Studies 1(1): 48–63",
+      "doi": "10.1515/icos-2022-2004",
+      "research_area": [
+        "儒家研究",
+        "宗教、宇宙論與形上學",
+        "經典詮釋與注疏傳統",
+        "政治哲學與倫理思想",
+        "思想史與概念史"
+      ],
+      "keywords_en": [
+        "Heaven and Earth",
+        "Confucian ethics",
+        "universality",
+        "ren",
+        "cosmic faith",
+        "jiaoshe rituals",
+        "this-worldliness",
+        "ecological ethics"
+      ],
+      "keywords_zh": [
+        "天地",
+        "儒家倫理",
+        "普遍性",
+        "仁",
+        "天地為父母",
+        "郊社禮",
+        "此世性",
+        "生態倫理"
+      ],
+      "notes": "使用者第二筆正式資料。依 2026-06-28_LI2022 兩份整理檔轉入資料庫。"
     }
   ],
   "academic_usage": [
@@ -309,6 +346,294 @@
       "imitable_pattern": "Of course, we must also allow that X paid the price of Y in a context where Z.",
       "cautions": "「Of course」不是口語填充，而是標示一個必須承認的複雜條件。",
       "source_location": "使用者提供 PDF；詳見 2026-06-28_國際中國哲學學術語用.txt。"
+    },
+    {
+      "usage_id": "U20260628-LI2022-001",
+      "paper_id": "P20260628-LI2022",
+      "date": "2026-06-28",
+      "author": "Cunshan Li",
+      "title": "The Heaven-Earth Cosmic Faith and the Universality of Confucian Ethics",
+      "year": "2022",
+      "source": "International Confucian Studies 1(1): 48–63",
+      "original_phrase": "This points to the “this-worldly” nature—vis à vis “other-worldly” nature...",
+      "pragmatic_category": "概念界定",
+      "chinese_explanation": "作者在摘要中即用「this-worldly／other-worldly」建立中西宗教宇宙觀的概念差異。此處不是泛泛比較中國與西方，而是將「天地」信仰定位為與人間具有連續性的最高神聖秩序。",
+      "argumentative_function": "為全文奠定關鍵判準：儒家普遍倫理不是從超越彼岸的神學命令推出，而是從天地、萬物、人倫之間的連續性推出。",
+      "why_learnable": "可學習如何在摘要中用一組對照概念凝縮全文問題意識，並避免只作描述性介紹。",
+      "transferable_context": "適用於說明中國哲學中的「天」「命」「道」「禮」與西方宗教、形上學概念不宜直接等同時。",
+      "imitable_pattern": "This points to the X nature—vis à vis Y—of Z.",
+      "cautions": "「vis à vis」具有明確比較意味，使用時須有可被文本支持的對照對象；不可把複雜傳統簡化為二分。 原整理分類：概念界定；比較與對照。",
+      "source_location": "使用者提供之 LI2022 學術語用整理檔；未附頁碼。"
+    },
+    {
+      "usage_id": "U20260628-LI2022-002",
+      "paper_id": "P20260628-LI2022",
+      "date": "2026-06-28",
+      "author": "Cunshan Li",
+      "title": "The Heaven-Earth Cosmic Faith and the Universality of Confucian Ethics",
+      "year": "2022",
+      "source": "International Confucian Studies 1(1): 48–63",
+      "original_phrase": "Such a notion synthesizes the cosmic law of nature and human centric ethics...",
+      "pragmatic_category": "論證推進",
+      "chinese_explanation": "作者用「synthesizes」指出「天地為父母」不是單純宗教信仰，而是把自然宇宙秩序與人倫倫理聯繫起來的綜合性觀念。",
+      "argumentative_function": "把材料層面的經典語句推進為理論層面的倫理根據。",
+      "why_learnable": "此句適合學習如何由文本命題過渡到哲學意涵，尤其是從宇宙論語言轉入倫理學論證。",
+      "transferable_context": "可用於說明《易傳》《中庸》《孟子》中自然秩序與修身倫理如何互相支撐。",
+      "imitable_pattern": "Such a notion synthesizes A and B, creating a unity of C and D through E.",
+      "cautions": "「synthesize」表示整合兩個層面，須能指出二者如何在文本中發生關聯；否則容易流於空泛。 原整理分類：論證推進；結論與貢獻。",
+      "source_location": "使用者提供之 LI2022 學術語用整理檔；未附頁碼。"
+    },
+    {
+      "usage_id": "U20260628-LI2022-003",
+      "paper_id": "P20260628-LI2022",
+      "date": "2026-06-28",
+      "author": "Cunshan Li",
+      "title": "The Heaven-Earth Cosmic Faith and the Universality of Confucian Ethics",
+      "year": "2022",
+      "source": "International Confucian Studies 1(1): 48–63",
+      "original_phrase": "The notion that ... probably first appeared around the time of the Western Zhou...",
+      "pragmatic_category": "限制與保留",
+      "chinese_explanation": "作者以「probably」處理「天地為父母」出現時間，保留了思想史斷代的不確定性。這是對早期材料作年代判斷時較審慎的寫法。",
+      "argumentative_function": "為後文討論郊社禮、《詩》《書》等材料建立時間起點，但未把斷代說成絕對定論。",
+      "why_learnable": "中國古代思想史論文常需判斷觀念出現時間，此句式能避免過度斷言。",
+      "transferable_context": "可用於論證某德目、觀念或語用型態「大概」形成於春秋戰國之際，但材料不足以精確斷代時。",
+      "imitable_pattern": "The notion that X probably first appeared around the time of Y.",
+      "cautions": "「probably」雖能降低語氣，但仍須有材料支撐；不能用來掩蓋證據不足。 原整理分類：限制與保留；思想史定位。",
+      "source_location": "使用者提供之 LI2022 學術語用整理檔；未附頁碼。"
+    },
+    {
+      "usage_id": "U20260628-LI2022-004",
+      "paper_id": "P20260628-LI2022",
+      "date": "2026-06-28",
+      "author": "Cunshan Li",
+      "title": "The Heaven-Earth Cosmic Faith and the Universality of Confucian Ethics",
+      "year": "2022",
+      "source": "International Confucian Studies 1(1): 48–63",
+      "original_phrase": "Of the two interpretations, that of Zhu has more merit.",
+      "pragmatic_category": "文獻定位",
+      "chinese_explanation": "作者比較《毛詩正義》與朱熹《詩集傳》對《小雅》「昊天」詩句的理解，並判定朱熹說較可取。",
+      "argumentative_function": "在注疏分歧中選擇較能支撐本文「宇宙父母」論題的詮釋路線。",
+      "why_learnable": "可學習如何在英文論文中處理傳統注疏歧異，先公平列舉，再作明確判斷。",
+      "transferable_context": "適用於比較鄭玄、孔穎達、朱熹、王先謙等注家對同一經句的不同解釋。",
+      "imitable_pattern": "Of the two interpretations, that of X has more merit.",
+      "cautions": "此句判斷性強，後文必須交代理由；若只是因符合自身論點而偏取某說，容易造成選證問題。 原整理分類：文獻定位；材料處理。",
+      "source_location": "使用者提供之 LI2022 學術語用整理檔；未附頁碼。"
+    },
+    {
+      "usage_id": "U20260628-LI2022-005",
+      "paper_id": "P20260628-LI2022",
+      "date": "2026-06-28",
+      "author": "Cunshan Li",
+      "title": "The Heaven-Earth Cosmic Faith and the Universality of Confucian Ethics",
+      "year": "2022",
+      "source": "International Confucian Studies 1(1): 48–63",
+      "original_phrase": "How did “vast and mighty Heaven” come to mean both “father and mother”?",
+      "pragmatic_category": "問題提出",
+      "chinese_explanation": "作者用疑問句把詩句釋義問題轉化為禮制與宇宙信仰問題。問題不是字面翻譯，而是「天」何以可涵攝「地母」義。",
+      "argumentative_function": "使文本詮釋不止於單句解釋，而推進到祭祀制度與天地對偶結構。",
+      "why_learnable": "適合學習如何用簡短問題句啟動一段材料分析，讓讀者清楚知道下一段要解決什麼。",
+      "transferable_context": "可用於處理古典文獻中某詞含義超出字面時，例如「直」何以可同時涉及言說與行動。",
+      "imitable_pattern": "How did X come to mean Y?",
+      "cautions": "此句式必須接續具體材料回答；不可提出問題後只作抽象推論。 原整理分類：問題提出；論證推進。",
+      "source_location": "使用者提供之 LI2022 學術語用整理檔；未附頁碼。"
+    },
+    {
+      "usage_id": "U20260628-LI2022-006",
+      "paper_id": "P20260628-LI2022",
+      "date": "2026-06-28",
+      "author": "Cunshan Li",
+      "title": "The Heaven-Earth Cosmic Faith and the Universality of Confucian Ethics",
+      "year": "2022",
+      "source": "International Confucian Studies 1(1): 48–63",
+      "original_phrase": "It is beyond any doubt however, that such rituals had been practiced by the Western Zhou...",
+      "pragmatic_category": "立場界定",
+      "chinese_explanation": "作者先承認商代是否已有郊社禮「仍可討論」，接著以強語氣指出西周已有此類禮制「無疑」。",
+      "argumentative_function": "建立材料層級：商代問題保留，西周作為本文論證的穩定起點。",
+      "why_learnable": "可學習如何同時處理不確定與確定材料，避免整段論證因一處不確定而失去基礎。",
+      "transferable_context": "適用於出土文獻、傳世文獻年代問題、制度史與思想史互證時。",
+      "imitable_pattern": "Whether X may still be a matter of debate; it is beyond doubt, however, that Y.",
+      "cautions": "「beyond any doubt」語氣很強，必須限定在證據相對充分之處；不可用於推測性判斷。 原整理分類：立場界定；材料處理。",
+      "source_location": "使用者提供之 LI2022 學術語用整理檔；未附頁碼。"
+    },
+    {
+      "usage_id": "U20260628-LI2022-007",
+      "paper_id": "P20260628-LI2022",
+      "date": "2026-06-28",
+      "author": "Cunshan Li",
+      "title": "The Heaven-Earth Cosmic Faith and the Universality of Confucian Ethics",
+      "year": "2022",
+      "source": "International Confucian Studies 1(1): 48–63",
+      "original_phrase": "Ricci’s criticism of Zhu Xi does not hold...",
+      "pragmatic_category": "反駁與批判",
+      "chinese_explanation": "作者直接反駁利瑪竇以一神論理解《中庸》「郊社」的批評，認為其忽略中國郊天、社地的禮制對偶。",
+      "argumentative_function": "凸顯中西宗教語義與禮制結構的不相容，並維護天地並祀作為中國宇宙信仰的基本型態。",
+      "why_learnable": "可學習如何反駁跨文化誤讀：不是直接否定對方，而是指出其解釋預設不符合材料脈絡。",
+      "transferable_context": "適用於批評以西方神學、形上學、倫理學框架過度套用中國哲學材料的論述。",
+      "imitable_pattern": "X’s criticism of Y does not hold, given Z.",
+      "cautions": "「does not hold」是明確反駁，須提出具體理由；若證據不足，可改用「is not fully persuasive」。 原整理分類：反駁與批判；比較與對照。",
+      "source_location": "使用者提供之 LI2022 學術語用整理檔；未附頁碼。"
+    },
+    {
+      "usage_id": "U20260628-LI2022-008",
+      "paper_id": "P20260628-LI2022",
+      "date": "2026-06-28",
+      "author": "Cunshan Li",
+      "title": "The Heaven-Earth Cosmic Faith and the Universality of Confucian Ethics",
+      "year": "2022",
+      "source": "International Confucian Studies 1(1): 48–63",
+      "original_phrase": "This notion ... had been clearly articulated by the Warring States Period...",
+      "pragmatic_category": "材料處理",
+      "chinese_explanation": "作者用「clearly articulated」標示觀念由早期禮制信仰進入戰國諸子文本中較明確的哲學表述。",
+      "argumentative_function": "將「天地為父母」從宗教禮制命題推進為跨學派共享的宇宙生成觀。",
+      "why_learnable": "適合用於思想史文章中標示某觀念從隱含到明確的發展階段。",
+      "transferable_context": "例如說明「性善」「知恥」「群」「禮義」等觀念在不同文本中的明確化過程。",
+      "imitable_pattern": "This notion had been clearly articulated by the time of X and was widely accepted by Y.",
+      "cautions": "「clearly articulated」應保留給文本中已有明確語句支持的階段；不可用於只是可推測的思想萌芽。 原整理分類：思想史定位；材料處理。",
+      "source_location": "使用者提供之 LI2022 學術語用整理檔；未附頁碼。"
+    },
+    {
+      "usage_id": "U20260628-LI2022-009",
+      "paper_id": "P20260628-LI2022",
+      "date": "2026-06-28",
+      "author": "Cunshan Li",
+      "title": "The Heaven-Earth Cosmic Faith and the Universality of Confucian Ethics",
+      "year": "2022",
+      "source": "International Confucian Studies 1(1): 48–63",
+      "original_phrase": "Thus, a synthesis of the natural way of Heaven and the ethical way of humanity was offered...",
+      "pragmatic_category": "論證推進",
+      "chinese_explanation": "作者在列舉《易傳》乾坤、天地感通、生生化成等材料後，用「synthesis」總結其哲學意義：天道與人道被構造成一個統一宇宙。",
+      "argumentative_function": "把密集引文整合為「天人一德」與自然—社會統一的義理命題。",
+      "why_learnable": "可學習如何在多則經典引文後提出概念性歸納，避免引文堆砌。",
+      "transferable_context": "適用於分析《易傳》《中庸》《荀子》如何由自然秩序推出倫理或政治秩序。",
+      "imitable_pattern": "Thus, a synthesis of A and B is offered by C, creating D.",
+      "cautions": "使用「thus」時，前文必須已提供足夠材料；否則結論會顯得跳躍。 原整理分類：論證推進；概念界定。",
+      "source_location": "使用者提供之 LI2022 學術語用整理檔；未附頁碼。"
+    },
+    {
+      "usage_id": "U20260628-LI2022-010",
+      "paper_id": "P20260628-LI2022",
+      "date": "2026-06-28",
+      "author": "Cunshan Li",
+      "title": "The Heaven-Earth Cosmic Faith and the Universality of Confucian Ethics",
+      "year": "2022",
+      "source": "International Confucian Studies 1(1): 48–63",
+      "original_phrase": "This also explains why...",
+      "pragmatic_category": "論證推進",
+      "chinese_explanation": "作者用「This also explains why」把前文「天人一德」的宇宙論，進一步連到「道不遠人」「中庸」等中國哲學核心觀念。",
+      "argumentative_function": "顯示前文不是孤立討論天地信仰，而能解釋中國哲學中若干常見命題的思想基礎。",
+      "why_learnable": "此句式適合把一段分析轉化為對更大思想現象的解釋。",
+      "transferable_context": "例如從《荀子》「能群」解釋禮義、分、群居和一等觀念之關係。",
+      "imitable_pattern": "This also explains why X is central to Y.",
+      "cautions": "此句會擴大論證範圍，須注意不要超出文章材料；若只是可能關聯，宜改用「may help explain」。 原整理分類：論證推進。",
+      "source_location": "使用者提供之 LI2022 學術語用整理檔；未附頁碼。"
+    },
+    {
+      "usage_id": "U20260628-LI2022-011",
+      "paper_id": "P20260628-LI2022",
+      "date": "2026-06-28",
+      "author": "Cunshan Li",
+      "title": "The Heaven-Earth Cosmic Faith and the Universality of Confucian Ethics",
+      "year": "2022",
+      "source": "International Confucian Studies 1(1): 48–63",
+      "original_phrase": "It no doubt reflects ... even though...",
+      "pragmatic_category": "限制與保留",
+      "chinese_explanation": "作者承認《尚書》「古文」本身可能較晚出，但仍認為其中「天地萬物父母，惟人萬物之靈」反映先秦思維。",
+      "argumentative_function": "在使用有爭議材料時，區分文本成書年代與思想內容可能反映的早期觀念。",
+      "why_learnable": "這是處理傳世文獻疑古問題時常用的論述策略，能避免因文獻問題而完全放棄其思想史價值。",
+      "transferable_context": "適用於使用《逸周書》《管子》《禮記》《大戴禮記》等成書複雜材料時。",
+      "imitable_pattern": "It no doubt reflects X, even though Y.",
+      "cautions": "「no doubt」與「even though」並用時須謹慎；前者強，後者保留。若證據不夠，宜改為「may well reflect」。 原整理分類：限制與保留；材料處理。",
+      "source_location": "使用者提供之 LI2022 學術語用整理檔；未附頁碼。"
+    },
+    {
+      "usage_id": "U20260628-LI2022-012",
+      "paper_id": "P20260628-LI2022",
+      "date": "2026-06-28",
+      "author": "Cunshan Li",
+      "title": "The Heaven-Earth Cosmic Faith and the Universality of Confucian Ethics",
+      "year": "2022",
+      "source": "International Confucian Studies 1(1): 48–63",
+      "original_phrase": "Why is it that humans are placed in such a supreme, crowning position...?",
+      "pragmatic_category": "問題提出",
+      "chinese_explanation": "作者在第三節中提出人何以為「萬物之靈」的問題，將宇宙生成論轉入人性論、心性論與修身倫理。",
+      "argumentative_function": "把「人為萬物之靈」從價值宣稱轉化為需要說明的哲學問題。",
+      "why_learnable": "可學習如何不把傳統命題當作自明真理，而是將其問題化，進而展開論證。",
+      "transferable_context": "可用於討論「人能群」「人有義」「人能知恥」「人能踐形」等中國哲學命題。",
+      "imitable_pattern": "Why is it that X is placed in such a position within Y?",
+      "cautions": "問題提出後，必須回答其根據；否則會變成修辭疑問而非論證起點。 原整理分類：問題提出。",
+      "source_location": "使用者提供之 LI2022 學術語用整理檔；未附頁碼。"
+    },
+    {
+      "usage_id": "U20260628-LI2022-013",
+      "paper_id": "P20260628-LI2022",
+      "date": "2026-06-28",
+      "author": "Cunshan Li",
+      "title": "The Heaven-Earth Cosmic Faith and the Universality of Confucian Ethics",
+      "year": "2022",
+      "source": "International Confucian Studies 1(1): 48–63",
+      "original_phrase": "should not be confused with the notion of “being” in Western ontology...",
+      "pragmatic_category": "概念界定",
+      "chinese_explanation": "作者提醒《論語》「本」不應被誤讀為西方本體論中的「being」，而應理解為天命連通與一體性的根本。",
+      "argumentative_function": "防止跨語言翻譯造成概念移位，維持儒家「孝悌為仁本」的倫理生成脈絡。",
+      "why_learnable": "非常適合中國哲學英文寫作：當某英文譯詞可能導向西方哲學既有問題系時，需立即限定語義。",
+      "transferable_context": "例如說明「性」不等於 nature 的自然主義義涵，「理」不等於 abstract principle 的純抽象義涵。",
+      "imitable_pattern": "X should not be confused with Y, lest Z.",
+      "cautions": "「lest」帶有防止誤讀的功能，但語氣較正式；須明確說明被避免的錯誤是什麼。 原整理分類：概念界定；反駁與批判。",
+      "source_location": "使用者提供之 LI2022 學術語用整理檔；未附頁碼。"
+    },
+    {
+      "usage_id": "U20260628-LI2022-014",
+      "paper_id": "P20260628-LI2022",
+      "date": "2026-06-28",
+      "author": "Cunshan Li",
+      "title": "The Heaven-Earth Cosmic Faith and the Universality of Confucian Ethics",
+      "year": "2022",
+      "source": "International Confucian Studies 1(1): 48–63",
+      "original_phrase": "Thus, the Confucian notion of Ren ... is not merely kinship-centred but extends...",
+      "pragmatic_category": "轉折與修正",
+      "chinese_explanation": "作者承認仁以親親、孝悌為起點，但修正「儒家倫理只是家族中心」的理解，指出仁由親親推擴至仁民、愛物。",
+      "argumentative_function": "回應可能的批評：儒家仁愛是否只是差等親屬倫理。作者主張其真正形式具有普遍德性面向。",
+      "why_learnable": "可學習如何使用「not merely... but...」修正簡化理解，而非完全否定前一層意義。",
+      "transferable_context": "適用於說明「禮」不只是外在規範，而是秩序生成與情感節文；「義」不只是規則，而是處境判斷。",
+      "imitable_pattern": "Thus, X is not merely A but extends from B to C.",
+      "cautions": "此句式要避免把被修正觀點說成稻草人；須承認「A」有其部分正確性。 原整理分類：轉折與修正；論證推進。",
+      "source_location": "使用者提供之 LI2022 學術語用整理檔；未附頁碼。"
+    },
+    {
+      "usage_id": "U20260628-LI2022-015",
+      "paper_id": "P20260628-LI2022",
+      "date": "2026-06-28",
+      "author": "Cunshan Li",
+      "title": "The Heaven-Earth Cosmic Faith and the Universality of Confucian Ethics",
+      "year": "2022",
+      "source": "International Confucian Studies 1(1): 48–63",
+      "original_phrase": "not only ... but also...",
+      "pragmatic_category": "結論與貢獻",
+      "chinese_explanation": "作者在文末以「not only... but also...」說明儒家倫理普遍性不只涵蓋「愛人」，也涵蓋「愛物」，並可延伸至生態倫理。",
+      "argumentative_function": "把儒家倫理從人際與政治倫理擴展至萬物與生態倫理，形成文章的當代意義。",
+      "why_learnable": "可學習如何在結論段把古典義理與當代問題連接，且透過「not only... but also...」呈現擴展層次。",
+      "transferable_context": "可用於將先秦倫理概念連結到現代公共倫理、環境倫理、共同體論述。",
+      "imitable_pattern": "X manifests itself not only in A but also in B.",
+      "cautions": "當代延伸須有文本根據；不可把古典命題直接等同現代環境倫理，宜說明是「可啟發」或「可延伸」。 原整理分類：結論與貢獻；比較與對照。",
+      "source_location": "使用者提供之 LI2022 學術語用整理檔；未附頁碼。"
+    },
+    {
+      "usage_id": "U20260628-LI2022-016",
+      "paper_id": "P20260628-LI2022",
+      "date": "2026-06-28",
+      "author": "Cunshan Li",
+      "title": "The Heaven-Earth Cosmic Faith and the Universality of Confucian Ethics",
+      "year": "2022",
+      "source": "International Confucian Studies 1(1): 48–63",
+      "original_phrase": "anything but a mere leap of faith.",
+      "pragmatic_category": "反駁與批判",
+      "chinese_explanation": "作者在文章末段強調，「天下一家」「民胞物與」等命題不是缺乏理據的信仰跳躍，而是根植於儒家理性與哲學結構。",
+      "argumentative_function": "回應可能批評：儒家普遍倫理是否只是宇宙信仰的道德化想像。作者主張其有內在理路。",
+      "why_learnable": "可學習如何用精簡、有力的句尾反駁鞏固全文論點。",
+      "transferable_context": "適用於為中國哲學中看似宗教性、象徵性或宇宙論性的命題辯護其哲學理據。",
+      "imitable_pattern": "X is firmly rooted in Y, anything but a mere Z.",
+      "cautions": "此語氣較強，適合結論或反駁段；若前文未充分論證，容易顯得過度宣稱。 原整理分類：反駁與批判；結論與貢獻。",
+      "source_location": "使用者提供之 LI2022 學術語用整理檔；未附頁碼。"
     }
   ],
   "research_horizon": [
@@ -331,6 +656,26 @@
       "relevance_to_my_research": "與中國哲學研究的關係：本文對中國哲學研究的重要性在於，它不是直接討論先秦儒道義理，而是處理「中國哲學如何被命名、被分類、被納入世界哲學」的後設問題。Ames 透過勞思光重估中國哲學與世界哲學的關係，並以「文化／wenhua」的概念譜系說明中國傳統中「文」「化」「變通」的開放生成性。這對中國哲學研究尤其重要，因為它提醒研究者不應只把中國思想作為西方哲學問題的例證，也不應只以民族文化防衛姿態理解中國哲學，而應在世界哲學場域內重新界定其方法與問題意識。；對你研究的啟發：第一，若研究《荀子》或先秦德目，不宜只把概念放入「中國傳統」與「西方理論」的外部比較，而可嘗試建立「內在關係場」：例如「群」「禮」「義」「辱」「直」等概念不是孤立德目，而是在文本、制度、行動、政治秩序與修身工夫之間形成互相構成的關係。第二，本文處理「culture／文化」的方式可啟發概念史寫法：不是只訓釋字義，而是考察隱喻、語用、理論預設與思想模型。第三，Ames 對「標籤」的警惕可用於未來論文：例如不要輕易把某文本歸為「儒家」「道家」「德性倫理學」「政治哲學」，而應說明該標籤能解釋什麼、又遮蔽什麼。第四，勞思光的「創生／模仿」「外在化／內在化」對研究出土文獻與傳世文獻的互證也有啟發：可把文本間關係看作既有自我生成，又有互相借用、轉化與重新內在化的過程。",
       "extendable_questions": "一、勞思光的「雙重結構觀」是否可用來重新理解先秦諸子之間的思想互動，而不是以學派分類先行決定材料關係。二、「文化／wenhua」的開放生成性是否能與《易傳》「變通」、儒家「文質」、荀子「化性起偽」形成更嚴格的概念史對讀。三、Ames 將勞思光定位為「world philosopher」是否仍保留了某種以英美哲學學科為中心的承認框架。四、若拒絕「Chinese philosopher」標籤，是否會削弱勞思光對中國哲學史內部問題的具體貢獻。五、能否以勞思光的方法論重新檢討「新儒家」分類對方東美、唐君毅、牟宗三、徐復觀等人的涵蓋與遮蔽。",
       "source_location": "使用者提供 PDF；材料不足處：一、本文引用勞思光著作與回憶性材料，但未對《中國文化要義》《中國文化要義新編》等文本進行逐章細讀，因此若要精確判定勞思光原典中的概念演變，仍需回到勞思光原書。二、文章對「文化／wenhua」的概念譜系具有啟發性，但就漢語古典文獻而言，材料主要集中於《說苑》、劉勰、《易經》《中庸》等例證，尚不足以構成完整詞彙史。三、文章將新儒家作為分類背景加以處理，但對唐君毅、牟宗三、熊十力等人的個別哲學細節多為綱要式比較；若要進一步做思想史判斷，需補充專門研究。四、文章對勞思光拒絕「New Confucian」標籤的說明具明確方向，但仍可進一步查核勞思光自述材料與學生回憶的文本脈絡。"
+    },
+    {
+      "horizon_id": "H20260628-LI2022-001",
+      "paper_id": "P20260628-LI2022",
+      "date": "2026-06-28",
+      "author": "Cunshan Li",
+      "title": "The Heaven-Earth Cosmic Faith and the Universality of Confucian Ethics",
+      "year": "2022",
+      "source": "International Confucian Studies 1(1): 48–63",
+      "research_topic": "天地宇宙信仰、郊社禮與儒家倫理普遍性之關係；尤其是「天地為父母」「天人一德」「人為天地之心」「親親—仁民—愛物」如何構成儒家普遍德性的義理基礎。",
+      "research_category": "儒家研究",
+      "core_question": "本文的核心問題是：中國古典文化中以天地為人與萬物父母的宇宙信仰，如何成為儒家倫理普遍性的根據。作者具體處理三層問題：第一，西周以來郊社禮與「天地父母」信仰如何形成中國「此世性」最高神聖秩序；第二，天地生生、乾坤父母、萬物生成如何支撐「天人一德」與人為萬物之靈的說法；第三，儒家仁愛如何由孝悌、親親出發，推擴為仁民愛物、民胞物與、天下一家與生態倫理。",
+      "materials": "文章主要材料包括《詩經·小雅》《尚書·召誥》《尚書·泰誓》《逸周書·作雒》《中庸》《荀子·禮論》《論語》《老子》《莊子》《黃帝四經》馬王堆帛書材料、《易傳》《禮記·禮運》《孝經》《孟子》《春秋左傳》《春秋繁露》《鹽鐵論》《呂氏春秋》《韓昌黎集》、張載《西銘》、周敦頤《太極圖說》、程顥程頤相關文集、朱熹《詩集傳》《中庸章句集注》《西銘解》《朱子語類》，並涉及利瑪竇《天主實義》對中國天地信仰的批評，以及杜維明、張岱年、李存山等現代研究材料。",
+      "method": "第一，禮制—宇宙論連結：從郊社禮的祭天、祭地制度出發，說明天地如何被理解為人與萬物的父母。第二，經典詮釋與注疏辨析：比較《毛詩正義》與朱熹《詩集傳》對「昊天」的解釋，並以鄭玄、朱熹對《中庸》「郊社」的說明支持「省文」說。第三，思想史追溯：由西周禮制、《詩》《書》到戰國諸子、《易傳》《禮記》，再到宋代理學，追蹤「天地生物—人成其德—仁愛推擴」的義理連續性。第四，跨文化比較：以利瑪竇天主教一神論與中國天地並祀信仰的差異，凸顯中國宇宙信仰的「此世性」與「continuity of being」。第五，倫理推擴分析：從孝親、仁人到愛物，說明儒家仁愛如何既保留差等，又通向普遍德性。",
+      "scholarly_interlocutors": "一、關於中國最高神聖秩序是否為一神論、超越神學或此世宇宙信仰的討論。二、關於儒家倫理是否只是家族中心、親屬本位，抑或具有普遍倫理潛能的討論。三、關於「天人合一／天人一德」是否可為人性善、修身工夫、仁民愛物提供哲學根據的討論。四、關於宋代理學《西銘》詮釋中「一體而分殊」「理一分殊」如何避免墨家兼愛與儒家私親之間兩端問題的討論。五、關於儒家倫理與當代共同體、生態倫理、環境保護之關聯的討論。",
+      "main_claim": "作者主張，天地作為人與萬物之父母，是中國古典宇宙信仰的核心。此信仰並非指向彼岸世界，而是表現最高神聖秩序與人間世界之間的連續性。基於天地生生與乾坤父母，儒家得以把自然宇宙法則與人倫倫理統合為「天人一德」。人作為天地所生且具心知、道德意識與修身能力者，能成為「天地之心」與「萬物之靈」。因此，儒家倫理雖以孝悌、親親為出發點，卻不止於家族倫理，而可透過推擴形成仁民愛物、民胞物與、天下一家等普遍德性。作者進一步認為，宋代理學對《西銘》的詮釋使此義理更明確：儒家仁愛既承認親疏、貴賤、氣稟與物類差異，又以天地同源、理一分殊建立普遍關懷。文末將此普遍德性連結至當代家庭倫理、人類命運共同體與生態環境保護。",
+      "international_horizon": "本文的國際視野主要表現在兩方面。第一，它以英文向國際讀者說明儒家倫理的普遍性不必透過西方一神論或抽象本體論來證成，而可由中國自身的天地宇宙信仰、禮制與經典詮釋系統加以重構。第二，它透過利瑪竇與朱熹、程頤之爭，呈現天主教唯一神觀與中國天地並祀、此世性信仰之間的文化差異。這使本文不只是儒家倫理內部討論，也是在國際中國哲學語境中為「儒家倫理是否具有普遍性」提供一種本土宇宙論根據。不過，文章與當代英語倫理學、生態哲學或宗教研究的直接對話較少，國際視野主要是藉由中西宗教宇宙觀差異與英文表述而展開。",
+      "relevance_to_my_research": "第一，對你的先秦楚簡天人思想研究而言，本文可提供一條「宇宙信仰—人之特殊性—倫理實踐」的問題鏈。若處理《畏天用身》或其他出土文獻，可注意「畏天」「用身」「知」「心」是否也在構成由天命、身心與行動能力連接而成的實踐結構。第二，對你研究《荀子》德目而言，本文所引《荀子·禮論》「天地者，生之本也」值得與《天論》《禮論》中的「天生人成」「化性起偽」對讀，但需注意《荀子》對天的理解與本文「天地信仰」的宗教性敘述未必完全相同。第三，對你處理《孟子》「踐形」或「盡心知性知天」問題而言，本文第三節可提供一種把性善、心知、修身與天道連結起來的英文表述方式。第四，對你未來做「國際中國哲學語用」資料庫而言，本文很適合學習如何在英文中處理「本」「性」「仁」「天」「地」「理」「氣」等容易被西方術語誤讀的概念。",
+      "extendable_questions": "一、若以出土文獻補充本文，馬王堆帛書、郭店楚簡、上博簡與清華簡中的天、地、身、心、性、命材料能否修正本文較依賴傳世經典與宋代理學的義理連續敘述。二、《荀子》的「天地者，生之本也」與《荀子·天論》的「明於天人之分」之間，是否真能納入本文「天人一德」框架，或需另作區分。三、儒家仁愛由親親推擴至愛物，與墨家兼愛、道家齊物、生態倫理之間的異同，仍可進一步精細比較。四、本文把中國天地信仰與基督教彼岸一神論作對照，但對基督教內部自然神學、創造論與生態神學的複雜性未展開，可作跨宗教比較的延伸課題。五、「天地為父母」的性別化隱喻與父母—子女式宇宙倫理，在現代平等倫理語境中如何重新詮釋，仍有研究空間。 材料不足處：一、文章雖以西周郊社禮作為起點，但對甲骨文、金文與西周禮制史材料的細部考證不多；商代郊社禮問題作者亦承認仍可討論。二、文章大量使用傳世文獻，且部分文本如古文《尚書》本身有成書與真偽問題；作者雖有保留，但未充分展開文獻學爭議。三、作者對「中國文化」與「西方基督教文化」的對比有時較概括，尤其是佛教「空」、基督教「暫居世界」等說法，尚不足以代表各傳統內部複雜思想。四、文章將儒家仁愛與當代生態倫理、人類命運共同體相連，具有啟發性，但從古典文獻到現代規範理論之間的中介論證仍較簡略。五、文章英文版標示由中文原文翻譯而來；若要精準研究其概念用語，仍宜回查中文原文，尤其是「天人一德」「此世性」「萬物一體」「理一分殊」等關鍵詞在原文中的表述。",
+      "source_location": "使用者提供之 LI2022 研究視野整理檔；未附頁碼。"
     }
   ],
   "concept_index": [
@@ -518,6 +863,298 @@
         "H20260628-AMES2022-001"
       ],
       "notes": "本文討論為何不宜把勞思光簡化歸入香港中文大學相關的新儒家系譜。"
+    },
+    {
+      "concept_id": "C-LI2022-001",
+      "zh_term": "天地",
+      "en_terms": [
+        "Heaven and Earth",
+        "Tian-Di"
+      ],
+      "related_zh_terms": [
+        "天",
+        "地",
+        "天地為父母",
+        "乾坤",
+        "郊社禮"
+      ],
+      "related_en_terms": [
+        "cosmic order",
+        "cosmic faith"
+      ],
+      "linked_paper_ids": [
+        "P20260628-LI2022"
+      ],
+      "linked_usage_ids": [
+        "U20260628-LI2022-001",
+        "U20260628-LI2022-002",
+        "U20260628-LI2022-009"
+      ],
+      "linked_horizon_ids": [
+        "H20260628-LI2022-001"
+      ],
+      "notes": "本文核心宇宙論概念，用以連接自然秩序、人倫倫理與儒家普遍德性。"
+    },
+    {
+      "concept_id": "C-LI2022-002",
+      "zh_term": "天地為父母",
+      "en_terms": [
+        "Heaven and Earth as father and mother",
+        "Heaven-Earth as parents"
+      ],
+      "related_zh_terms": [
+        "天地",
+        "乾父坤母",
+        "萬物之靈",
+        "民胞物與"
+      ],
+      "related_en_terms": [
+        "cosmic parenthood",
+        "generativity"
+      ],
+      "linked_paper_ids": [
+        "P20260628-LI2022"
+      ],
+      "linked_usage_ids": [
+        "U20260628-LI2022-002",
+        "U20260628-LI2022-005"
+      ],
+      "linked_horizon_ids": [
+        "H20260628-LI2022-001"
+      ],
+      "notes": "本文用以說明天地信仰如何成為仁愛推擴與普遍倫理的義理根據。"
+    },
+    {
+      "concept_id": "C-LI2022-003",
+      "zh_term": "此世性",
+      "en_terms": [
+        "this-worldliness",
+        "this-worldly nature"
+      ],
+      "related_zh_terms": [
+        "天地信仰",
+        "郊社禮",
+        "連續性存在"
+      ],
+      "related_en_terms": [
+        "continuity of being",
+        "immanent sacred order"
+      ],
+      "linked_paper_ids": [
+        "P20260628-LI2022"
+      ],
+      "linked_usage_ids": [
+        "U20260628-LI2022-001",
+        "U20260628-LI2022-007"
+      ],
+      "linked_horizon_ids": [
+        "H20260628-LI2022-001"
+      ],
+      "notes": "作者以此區分中國天地信仰與彼岸式神學模式；須避免二分化理解。"
+    },
+    {
+      "concept_id": "C-LI2022-004",
+      "zh_term": "郊社禮",
+      "en_terms": [
+        "jiaoshe rituals",
+        "sacrifices to Heaven and Earth"
+      ],
+      "related_zh_terms": [
+        "祭天",
+        "祭地",
+        "西周禮制",
+        "天地並祀"
+      ],
+      "related_en_terms": [
+        "ritual system",
+        "sacrificial rites"
+      ],
+      "linked_paper_ids": [
+        "P20260628-LI2022"
+      ],
+      "linked_usage_ids": [
+        "U20260628-LI2022-005",
+        "U20260628-LI2022-006",
+        "U20260628-LI2022-007"
+      ],
+      "linked_horizon_ids": [
+        "H20260628-LI2022-001"
+      ],
+      "notes": "本文將郊社禮作為天地父母信仰的制度性材料。"
+    },
+    {
+      "concept_id": "C-LI2022-005",
+      "zh_term": "天人一德",
+      "en_terms": [
+        "unity of Heaven and human virtue",
+        "Heaven-human shared virtue"
+      ],
+      "related_zh_terms": [
+        "天人合一",
+        "天道",
+        "人道",
+        "乾坤"
+      ],
+      "related_en_terms": [
+        "cosmic-ethical unity"
+      ],
+      "linked_paper_ids": [
+        "P20260628-LI2022"
+      ],
+      "linked_usage_ids": [
+        "U20260628-LI2022-009",
+        "U20260628-LI2022-010"
+      ],
+      "linked_horizon_ids": [
+        "H20260628-LI2022-001"
+      ],
+      "notes": "本文用以說明天道與人道在儒家倫理中的合一結構。"
+    },
+    {
+      "concept_id": "C-LI2022-006",
+      "zh_term": "仁",
+      "en_terms": [
+        "ren",
+        "humaneness",
+        "benevolence"
+      ],
+      "related_zh_terms": [
+        "孝悌",
+        "親親",
+        "仁民",
+        "愛物"
+      ],
+      "related_en_terms": [
+        "Confucian ethics",
+        "universal virtue"
+      ],
+      "linked_paper_ids": [
+        "P20260628-LI2022"
+      ],
+      "linked_usage_ids": [
+        "U20260628-LI2022-013",
+        "U20260628-LI2022-014",
+        "U20260628-LI2022-015"
+      ],
+      "linked_horizon_ids": [
+        "H20260628-LI2022-001"
+      ],
+      "notes": "本文主張仁由親親出發，但可推擴至仁民愛物與普遍德性。"
+    },
+    {
+      "concept_id": "C-LI2022-007",
+      "zh_term": "親親—仁民—愛物",
+      "en_terms": [
+        "loving kin, caring for the people, and loving things"
+      ],
+      "related_zh_terms": [
+        "孝悌",
+        "仁",
+        "仁民愛物",
+        "民胞物與"
+      ],
+      "related_en_terms": [
+        "extension of care",
+        "graded love",
+        "universal care"
+      ],
+      "linked_paper_ids": [
+        "P20260628-LI2022"
+      ],
+      "linked_usage_ids": [
+        "U20260628-LI2022-014",
+        "U20260628-LI2022-015"
+      ],
+      "linked_horizon_ids": [
+        "H20260628-LI2022-001"
+      ],
+      "notes": "本文用以回應儒家倫理是否只是家族中心的問題，顯示由差等至普遍的推擴結構。"
+    },
+    {
+      "concept_id": "C-LI2022-008",
+      "zh_term": "萬物之靈",
+      "en_terms": [
+        "numinous among the ten thousand things",
+        "the most spiritual of all things"
+      ],
+      "related_zh_terms": [
+        "人為天地之心",
+        "心知",
+        "修身",
+        "天命之性"
+      ],
+      "related_en_terms": [
+        "human distinctiveness",
+        "moral agency"
+      ],
+      "linked_paper_ids": [
+        "P20260628-LI2022"
+      ],
+      "linked_usage_ids": [
+        "U20260628-LI2022-011",
+        "U20260628-LI2022-012"
+      ],
+      "linked_horizon_ids": [
+        "H20260628-LI2022-001"
+      ],
+      "notes": "本文第三節以此討論人在天地萬物中的特殊位置及其道德能力。"
+    },
+    {
+      "concept_id": "C-LI2022-009",
+      "zh_term": "民胞物與",
+      "en_terms": [
+        "all people are my siblings and all things are my companions"
+      ],
+      "related_zh_terms": [
+        "西銘",
+        "仁民愛物",
+        "萬物一體",
+        "理一分殊"
+      ],
+      "related_en_terms": [
+        "cosmic kinship",
+        "ecological ethics"
+      ],
+      "linked_paper_ids": [
+        "P20260628-LI2022"
+      ],
+      "linked_usage_ids": [
+        "U20260628-LI2022-015",
+        "U20260628-LI2022-016"
+      ],
+      "linked_horizon_ids": [
+        "H20260628-LI2022-001"
+      ],
+      "notes": "本文將張載《西銘》及朱熹詮釋作為儒家普遍德性與生態倫理的關鍵材料。"
+    },
+    {
+      "concept_id": "C-LI2022-010",
+      "zh_term": "理一分殊",
+      "en_terms": [
+        "one principle with diverse manifestations",
+        "principle is one, manifestations are many"
+      ],
+      "related_zh_terms": [
+        "一體而分殊",
+        "西銘",
+        "親疏差等",
+        "普遍仁愛"
+      ],
+      "related_en_terms": [
+        "unity and differentiation",
+        "graded particularity"
+      ],
+      "linked_paper_ids": [
+        "P20260628-LI2022"
+      ],
+      "linked_usage_ids": [
+        "U20260628-LI2022-015",
+        "U20260628-LI2022-016"
+      ],
+      "linked_horizon_ids": [
+        "H20260628-LI2022-001"
+      ],
+      "notes": "本文研究視野中涉及宋代理學如何同時保存一體性與分殊差等。"
     }
   ]
 }

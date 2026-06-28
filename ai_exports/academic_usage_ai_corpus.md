@@ -483,6 +483,518 @@ Of course, we must also allow that X paid the price of Y in a context where Z.
 
 ---
 
+## U20260628-LI2022-001｜概念界定
+
+- 對應論文 ID：P20260628-LI2022
+- 作者：Cunshan Li
+- 論文題名：The Heaven-Earth Cosmic Faith and the Universality of Confucian Ethics
+- 年份：2022
+- 來源：International Confucian Studies 1(1): 48–63
+- 來源位置：使用者提供之 LI2022 學術語用整理檔；未附頁碼。
+
+### 原文語句或語塊
+This points to the “this-worldly” nature—vis à vis “other-worldly” nature...
+
+### 中文語義與語境說明
+作者在摘要中即用「this-worldly／other-worldly」建立中西宗教宇宙觀的概念差異。此處不是泛泛比較中國與西方，而是將「天地」信仰定位為與人間具有連續性的最高神聖秩序。
+
+### 論證功能
+為全文奠定關鍵判準：儒家普遍倫理不是從超越彼岸的神學命令推出，而是從天地、萬物、人倫之間的連續性推出。
+
+### 值得學習之處
+可學習如何在摘要中用一組對照概念凝縮全文問題意識，並避免只作描述性介紹。
+
+### 可遷移使用情境
+適用於說明中國哲學中的「天」「命」「道」「禮」與西方宗教、形上學概念不宜直接等同時。
+
+### 可仿寫句式
+This points to the X nature—vis à vis Y—of Z.
+
+### 注意事項
+「vis à vis」具有明確比較意味，使用時須有可被文本支持的對照對象；不可把複雜傳統簡化為二分。 原整理分類：概念界定；比較與對照。
+
+---
+
+## U20260628-LI2022-002｜論證推進
+
+- 對應論文 ID：P20260628-LI2022
+- 作者：Cunshan Li
+- 論文題名：The Heaven-Earth Cosmic Faith and the Universality of Confucian Ethics
+- 年份：2022
+- 來源：International Confucian Studies 1(1): 48–63
+- 來源位置：使用者提供之 LI2022 學術語用整理檔；未附頁碼。
+
+### 原文語句或語塊
+Such a notion synthesizes the cosmic law of nature and human centric ethics...
+
+### 中文語義與語境說明
+作者用「synthesizes」指出「天地為父母」不是單純宗教信仰，而是把自然宇宙秩序與人倫倫理聯繫起來的綜合性觀念。
+
+### 論證功能
+把材料層面的經典語句推進為理論層面的倫理根據。
+
+### 值得學習之處
+此句適合學習如何由文本命題過渡到哲學意涵，尤其是從宇宙論語言轉入倫理學論證。
+
+### 可遷移使用情境
+可用於說明《易傳》《中庸》《孟子》中自然秩序與修身倫理如何互相支撐。
+
+### 可仿寫句式
+Such a notion synthesizes A and B, creating a unity of C and D through E.
+
+### 注意事項
+「synthesize」表示整合兩個層面，須能指出二者如何在文本中發生關聯；否則容易流於空泛。 原整理分類：論證推進；結論與貢獻。
+
+---
+
+## U20260628-LI2022-003｜限制與保留
+
+- 對應論文 ID：P20260628-LI2022
+- 作者：Cunshan Li
+- 論文題名：The Heaven-Earth Cosmic Faith and the Universality of Confucian Ethics
+- 年份：2022
+- 來源：International Confucian Studies 1(1): 48–63
+- 來源位置：使用者提供之 LI2022 學術語用整理檔；未附頁碼。
+
+### 原文語句或語塊
+The notion that ... probably first appeared around the time of the Western Zhou...
+
+### 中文語義與語境說明
+作者以「probably」處理「天地為父母」出現時間，保留了思想史斷代的不確定性。這是對早期材料作年代判斷時較審慎的寫法。
+
+### 論證功能
+為後文討論郊社禮、《詩》《書》等材料建立時間起點，但未把斷代說成絕對定論。
+
+### 值得學習之處
+中國古代思想史論文常需判斷觀念出現時間，此句式能避免過度斷言。
+
+### 可遷移使用情境
+可用於論證某德目、觀念或語用型態「大概」形成於春秋戰國之際，但材料不足以精確斷代時。
+
+### 可仿寫句式
+The notion that X probably first appeared around the time of Y.
+
+### 注意事項
+「probably」雖能降低語氣，但仍須有材料支撐；不能用來掩蓋證據不足。 原整理分類：限制與保留；思想史定位。
+
+---
+
+## U20260628-LI2022-004｜文獻定位
+
+- 對應論文 ID：P20260628-LI2022
+- 作者：Cunshan Li
+- 論文題名：The Heaven-Earth Cosmic Faith and the Universality of Confucian Ethics
+- 年份：2022
+- 來源：International Confucian Studies 1(1): 48–63
+- 來源位置：使用者提供之 LI2022 學術語用整理檔；未附頁碼。
+
+### 原文語句或語塊
+Of the two interpretations, that of Zhu has more merit.
+
+### 中文語義與語境說明
+作者比較《毛詩正義》與朱熹《詩集傳》對《小雅》「昊天」詩句的理解，並判定朱熹說較可取。
+
+### 論證功能
+在注疏分歧中選擇較能支撐本文「宇宙父母」論題的詮釋路線。
+
+### 值得學習之處
+可學習如何在英文論文中處理傳統注疏歧異，先公平列舉，再作明確判斷。
+
+### 可遷移使用情境
+適用於比較鄭玄、孔穎達、朱熹、王先謙等注家對同一經句的不同解釋。
+
+### 可仿寫句式
+Of the two interpretations, that of X has more merit.
+
+### 注意事項
+此句判斷性強，後文必須交代理由；若只是因符合自身論點而偏取某說，容易造成選證問題。 原整理分類：文獻定位；材料處理。
+
+---
+
+## U20260628-LI2022-005｜問題提出
+
+- 對應論文 ID：P20260628-LI2022
+- 作者：Cunshan Li
+- 論文題名：The Heaven-Earth Cosmic Faith and the Universality of Confucian Ethics
+- 年份：2022
+- 來源：International Confucian Studies 1(1): 48–63
+- 來源位置：使用者提供之 LI2022 學術語用整理檔；未附頁碼。
+
+### 原文語句或語塊
+How did “vast and mighty Heaven” come to mean both “father and mother”?
+
+### 中文語義與語境說明
+作者用疑問句把詩句釋義問題轉化為禮制與宇宙信仰問題。問題不是字面翻譯，而是「天」何以可涵攝「地母」義。
+
+### 論證功能
+使文本詮釋不止於單句解釋，而推進到祭祀制度與天地對偶結構。
+
+### 值得學習之處
+適合學習如何用簡短問題句啟動一段材料分析，讓讀者清楚知道下一段要解決什麼。
+
+### 可遷移使用情境
+可用於處理古典文獻中某詞含義超出字面時，例如「直」何以可同時涉及言說與行動。
+
+### 可仿寫句式
+How did X come to mean Y?
+
+### 注意事項
+此句式必須接續具體材料回答；不可提出問題後只作抽象推論。 原整理分類：問題提出；論證推進。
+
+---
+
+## U20260628-LI2022-006｜立場界定
+
+- 對應論文 ID：P20260628-LI2022
+- 作者：Cunshan Li
+- 論文題名：The Heaven-Earth Cosmic Faith and the Universality of Confucian Ethics
+- 年份：2022
+- 來源：International Confucian Studies 1(1): 48–63
+- 來源位置：使用者提供之 LI2022 學術語用整理檔；未附頁碼。
+
+### 原文語句或語塊
+It is beyond any doubt however, that such rituals had been practiced by the Western Zhou...
+
+### 中文語義與語境說明
+作者先承認商代是否已有郊社禮「仍可討論」，接著以強語氣指出西周已有此類禮制「無疑」。
+
+### 論證功能
+建立材料層級：商代問題保留，西周作為本文論證的穩定起點。
+
+### 值得學習之處
+可學習如何同時處理不確定與確定材料，避免整段論證因一處不確定而失去基礎。
+
+### 可遷移使用情境
+適用於出土文獻、傳世文獻年代問題、制度史與思想史互證時。
+
+### 可仿寫句式
+Whether X may still be a matter of debate; it is beyond doubt, however, that Y.
+
+### 注意事項
+「beyond any doubt」語氣很強，必須限定在證據相對充分之處；不可用於推測性判斷。 原整理分類：立場界定；材料處理。
+
+---
+
+## U20260628-LI2022-007｜反駁與批判
+
+- 對應論文 ID：P20260628-LI2022
+- 作者：Cunshan Li
+- 論文題名：The Heaven-Earth Cosmic Faith and the Universality of Confucian Ethics
+- 年份：2022
+- 來源：International Confucian Studies 1(1): 48–63
+- 來源位置：使用者提供之 LI2022 學術語用整理檔；未附頁碼。
+
+### 原文語句或語塊
+Ricci’s criticism of Zhu Xi does not hold...
+
+### 中文語義與語境說明
+作者直接反駁利瑪竇以一神論理解《中庸》「郊社」的批評，認為其忽略中國郊天、社地的禮制對偶。
+
+### 論證功能
+凸顯中西宗教語義與禮制結構的不相容，並維護天地並祀作為中國宇宙信仰的基本型態。
+
+### 值得學習之處
+可學習如何反駁跨文化誤讀：不是直接否定對方，而是指出其解釋預設不符合材料脈絡。
+
+### 可遷移使用情境
+適用於批評以西方神學、形上學、倫理學框架過度套用中國哲學材料的論述。
+
+### 可仿寫句式
+X’s criticism of Y does not hold, given Z.
+
+### 注意事項
+「does not hold」是明確反駁，須提出具體理由；若證據不足，可改用「is not fully persuasive」。 原整理分類：反駁與批判；比較與對照。
+
+---
+
+## U20260628-LI2022-008｜材料處理
+
+- 對應論文 ID：P20260628-LI2022
+- 作者：Cunshan Li
+- 論文題名：The Heaven-Earth Cosmic Faith and the Universality of Confucian Ethics
+- 年份：2022
+- 來源：International Confucian Studies 1(1): 48–63
+- 來源位置：使用者提供之 LI2022 學術語用整理檔；未附頁碼。
+
+### 原文語句或語塊
+This notion ... had been clearly articulated by the Warring States Period...
+
+### 中文語義與語境說明
+作者用「clearly articulated」標示觀念由早期禮制信仰進入戰國諸子文本中較明確的哲學表述。
+
+### 論證功能
+將「天地為父母」從宗教禮制命題推進為跨學派共享的宇宙生成觀。
+
+### 值得學習之處
+適合用於思想史文章中標示某觀念從隱含到明確的發展階段。
+
+### 可遷移使用情境
+例如說明「性善」「知恥」「群」「禮義」等觀念在不同文本中的明確化過程。
+
+### 可仿寫句式
+This notion had been clearly articulated by the time of X and was widely accepted by Y.
+
+### 注意事項
+「clearly articulated」應保留給文本中已有明確語句支持的階段；不可用於只是可推測的思想萌芽。 原整理分類：思想史定位；材料處理。
+
+---
+
+## U20260628-LI2022-009｜論證推進
+
+- 對應論文 ID：P20260628-LI2022
+- 作者：Cunshan Li
+- 論文題名：The Heaven-Earth Cosmic Faith and the Universality of Confucian Ethics
+- 年份：2022
+- 來源：International Confucian Studies 1(1): 48–63
+- 來源位置：使用者提供之 LI2022 學術語用整理檔；未附頁碼。
+
+### 原文語句或語塊
+Thus, a synthesis of the natural way of Heaven and the ethical way of humanity was offered...
+
+### 中文語義與語境說明
+作者在列舉《易傳》乾坤、天地感通、生生化成等材料後，用「synthesis」總結其哲學意義：天道與人道被構造成一個統一宇宙。
+
+### 論證功能
+把密集引文整合為「天人一德」與自然—社會統一的義理命題。
+
+### 值得學習之處
+可學習如何在多則經典引文後提出概念性歸納，避免引文堆砌。
+
+### 可遷移使用情境
+適用於分析《易傳》《中庸》《荀子》如何由自然秩序推出倫理或政治秩序。
+
+### 可仿寫句式
+Thus, a synthesis of A and B is offered by C, creating D.
+
+### 注意事項
+使用「thus」時，前文必須已提供足夠材料；否則結論會顯得跳躍。 原整理分類：論證推進；概念界定。
+
+---
+
+## U20260628-LI2022-010｜論證推進
+
+- 對應論文 ID：P20260628-LI2022
+- 作者：Cunshan Li
+- 論文題名：The Heaven-Earth Cosmic Faith and the Universality of Confucian Ethics
+- 年份：2022
+- 來源：International Confucian Studies 1(1): 48–63
+- 來源位置：使用者提供之 LI2022 學術語用整理檔；未附頁碼。
+
+### 原文語句或語塊
+This also explains why...
+
+### 中文語義與語境說明
+作者用「This also explains why」把前文「天人一德」的宇宙論，進一步連到「道不遠人」「中庸」等中國哲學核心觀念。
+
+### 論證功能
+顯示前文不是孤立討論天地信仰，而能解釋中國哲學中若干常見命題的思想基礎。
+
+### 值得學習之處
+此句式適合把一段分析轉化為對更大思想現象的解釋。
+
+### 可遷移使用情境
+例如從《荀子》「能群」解釋禮義、分、群居和一等觀念之關係。
+
+### 可仿寫句式
+This also explains why X is central to Y.
+
+### 注意事項
+此句會擴大論證範圍，須注意不要超出文章材料；若只是可能關聯，宜改用「may help explain」。 原整理分類：論證推進。
+
+---
+
+## U20260628-LI2022-011｜限制與保留
+
+- 對應論文 ID：P20260628-LI2022
+- 作者：Cunshan Li
+- 論文題名：The Heaven-Earth Cosmic Faith and the Universality of Confucian Ethics
+- 年份：2022
+- 來源：International Confucian Studies 1(1): 48–63
+- 來源位置：使用者提供之 LI2022 學術語用整理檔；未附頁碼。
+
+### 原文語句或語塊
+It no doubt reflects ... even though...
+
+### 中文語義與語境說明
+作者承認《尚書》「古文」本身可能較晚出，但仍認為其中「天地萬物父母，惟人萬物之靈」反映先秦思維。
+
+### 論證功能
+在使用有爭議材料時，區分文本成書年代與思想內容可能反映的早期觀念。
+
+### 值得學習之處
+這是處理傳世文獻疑古問題時常用的論述策略，能避免因文獻問題而完全放棄其思想史價值。
+
+### 可遷移使用情境
+適用於使用《逸周書》《管子》《禮記》《大戴禮記》等成書複雜材料時。
+
+### 可仿寫句式
+It no doubt reflects X, even though Y.
+
+### 注意事項
+「no doubt」與「even though」並用時須謹慎；前者強，後者保留。若證據不夠，宜改為「may well reflect」。 原整理分類：限制與保留；材料處理。
+
+---
+
+## U20260628-LI2022-012｜問題提出
+
+- 對應論文 ID：P20260628-LI2022
+- 作者：Cunshan Li
+- 論文題名：The Heaven-Earth Cosmic Faith and the Universality of Confucian Ethics
+- 年份：2022
+- 來源：International Confucian Studies 1(1): 48–63
+- 來源位置：使用者提供之 LI2022 學術語用整理檔；未附頁碼。
+
+### 原文語句或語塊
+Why is it that humans are placed in such a supreme, crowning position...?
+
+### 中文語義與語境說明
+作者在第三節中提出人何以為「萬物之靈」的問題，將宇宙生成論轉入人性論、心性論與修身倫理。
+
+### 論證功能
+把「人為萬物之靈」從價值宣稱轉化為需要說明的哲學問題。
+
+### 值得學習之處
+可學習如何不把傳統命題當作自明真理，而是將其問題化，進而展開論證。
+
+### 可遷移使用情境
+可用於討論「人能群」「人有義」「人能知恥」「人能踐形」等中國哲學命題。
+
+### 可仿寫句式
+Why is it that X is placed in such a position within Y?
+
+### 注意事項
+問題提出後，必須回答其根據；否則會變成修辭疑問而非論證起點。 原整理分類：問題提出。
+
+---
+
+## U20260628-LI2022-013｜概念界定
+
+- 對應論文 ID：P20260628-LI2022
+- 作者：Cunshan Li
+- 論文題名：The Heaven-Earth Cosmic Faith and the Universality of Confucian Ethics
+- 年份：2022
+- 來源：International Confucian Studies 1(1): 48–63
+- 來源位置：使用者提供之 LI2022 學術語用整理檔；未附頁碼。
+
+### 原文語句或語塊
+should not be confused with the notion of “being” in Western ontology...
+
+### 中文語義與語境說明
+作者提醒《論語》「本」不應被誤讀為西方本體論中的「being」，而應理解為天命連通與一體性的根本。
+
+### 論證功能
+防止跨語言翻譯造成概念移位，維持儒家「孝悌為仁本」的倫理生成脈絡。
+
+### 值得學習之處
+非常適合中國哲學英文寫作：當某英文譯詞可能導向西方哲學既有問題系時，需立即限定語義。
+
+### 可遷移使用情境
+例如說明「性」不等於 nature 的自然主義義涵，「理」不等於 abstract principle 的純抽象義涵。
+
+### 可仿寫句式
+X should not be confused with Y, lest Z.
+
+### 注意事項
+「lest」帶有防止誤讀的功能，但語氣較正式；須明確說明被避免的錯誤是什麼。 原整理分類：概念界定；反駁與批判。
+
+---
+
+## U20260628-LI2022-014｜轉折與修正
+
+- 對應論文 ID：P20260628-LI2022
+- 作者：Cunshan Li
+- 論文題名：The Heaven-Earth Cosmic Faith and the Universality of Confucian Ethics
+- 年份：2022
+- 來源：International Confucian Studies 1(1): 48–63
+- 來源位置：使用者提供之 LI2022 學術語用整理檔；未附頁碼。
+
+### 原文語句或語塊
+Thus, the Confucian notion of Ren ... is not merely kinship-centred but extends...
+
+### 中文語義與語境說明
+作者承認仁以親親、孝悌為起點，但修正「儒家倫理只是家族中心」的理解，指出仁由親親推擴至仁民、愛物。
+
+### 論證功能
+回應可能的批評：儒家仁愛是否只是差等親屬倫理。作者主張其真正形式具有普遍德性面向。
+
+### 值得學習之處
+可學習如何使用「not merely... but...」修正簡化理解，而非完全否定前一層意義。
+
+### 可遷移使用情境
+適用於說明「禮」不只是外在規範，而是秩序生成與情感節文；「義」不只是規則，而是處境判斷。
+
+### 可仿寫句式
+Thus, X is not merely A but extends from B to C.
+
+### 注意事項
+此句式要避免把被修正觀點說成稻草人；須承認「A」有其部分正確性。 原整理分類：轉折與修正；論證推進。
+
+---
+
+## U20260628-LI2022-015｜結論與貢獻
+
+- 對應論文 ID：P20260628-LI2022
+- 作者：Cunshan Li
+- 論文題名：The Heaven-Earth Cosmic Faith and the Universality of Confucian Ethics
+- 年份：2022
+- 來源：International Confucian Studies 1(1): 48–63
+- 來源位置：使用者提供之 LI2022 學術語用整理檔；未附頁碼。
+
+### 原文語句或語塊
+not only ... but also...
+
+### 中文語義與語境說明
+作者在文末以「not only... but also...」說明儒家倫理普遍性不只涵蓋「愛人」，也涵蓋「愛物」，並可延伸至生態倫理。
+
+### 論證功能
+把儒家倫理從人際與政治倫理擴展至萬物與生態倫理，形成文章的當代意義。
+
+### 值得學習之處
+可學習如何在結論段把古典義理與當代問題連接，且透過「not only... but also...」呈現擴展層次。
+
+### 可遷移使用情境
+可用於將先秦倫理概念連結到現代公共倫理、環境倫理、共同體論述。
+
+### 可仿寫句式
+X manifests itself not only in A but also in B.
+
+### 注意事項
+當代延伸須有文本根據；不可把古典命題直接等同現代環境倫理，宜說明是「可啟發」或「可延伸」。 原整理分類：結論與貢獻；比較與對照。
+
+---
+
+## U20260628-LI2022-016｜反駁與批判
+
+- 對應論文 ID：P20260628-LI2022
+- 作者：Cunshan Li
+- 論文題名：The Heaven-Earth Cosmic Faith and the Universality of Confucian Ethics
+- 年份：2022
+- 來源：International Confucian Studies 1(1): 48–63
+- 來源位置：使用者提供之 LI2022 學術語用整理檔；未附頁碼。
+
+### 原文語句或語塊
+anything but a mere leap of faith.
+
+### 中文語義與語境說明
+作者在文章末段強調，「天下一家」「民胞物與」等命題不是缺乏理據的信仰跳躍，而是根植於儒家理性與哲學結構。
+
+### 論證功能
+回應可能批評：儒家普遍倫理是否只是宇宙信仰的道德化想像。作者主張其有內在理路。
+
+### 值得學習之處
+可學習如何用精簡、有力的句尾反駁鞏固全文論點。
+
+### 可遷移使用情境
+適用於為中國哲學中看似宗教性、象徵性或宇宙論性的命題辯護其哲學理據。
+
+### 可仿寫句式
+X is firmly rooted in Y, anything but a mere Z.
+
+### 注意事項
+此語氣較強，適合結論或反駁段；若前文未充分論證，容易顯得過度宣稱。 原整理分類：反駁與批判；結論與貢獻。
+
+---
+
 # 概念索引補充
 
 以下概念資料用於協助 AI 進行中英概念連結、語義擴展與檢索。
@@ -550,5 +1062,115 @@ Of course, we must also allow that X paid the price of Y in a context where Z.
 - 關聯論文 ID：P20260628-AMES2022-001
 - 關聯語用 ID：U20260628-AMES2022-014、U20260628-AMES2022-015
 - 補充說明：本文討論為何不宜把勞思光簡化歸入香港中文大學相關的新儒家系譜。
+
+---
+
+## C-LI2022-001｜天地
+
+- 英文術語：Heaven and Earth、Tian-Di
+- 相關中文概念：天、地、天地為父母、乾坤、郊社禮
+- 相關英文術語：cosmic order、cosmic faith
+- 關聯論文 ID：P20260628-LI2022
+- 關聯語用 ID：U20260628-LI2022-001、U20260628-LI2022-002、U20260628-LI2022-009
+- 補充說明：本文核心宇宙論概念，用以連接自然秩序、人倫倫理與儒家普遍德性。
+
+---
+
+## C-LI2022-002｜天地為父母
+
+- 英文術語：Heaven and Earth as father and mother、Heaven-Earth as parents
+- 相關中文概念：天地、乾父坤母、萬物之靈、民胞物與
+- 相關英文術語：cosmic parenthood、generativity
+- 關聯論文 ID：P20260628-LI2022
+- 關聯語用 ID：U20260628-LI2022-002、U20260628-LI2022-005
+- 補充說明：本文用以說明天地信仰如何成為仁愛推擴與普遍倫理的義理根據。
+
+---
+
+## C-LI2022-003｜此世性
+
+- 英文術語：this-worldliness、this-worldly nature
+- 相關中文概念：天地信仰、郊社禮、連續性存在
+- 相關英文術語：continuity of being、immanent sacred order
+- 關聯論文 ID：P20260628-LI2022
+- 關聯語用 ID：U20260628-LI2022-001、U20260628-LI2022-007
+- 補充說明：作者以此區分中國天地信仰與彼岸式神學模式；須避免二分化理解。
+
+---
+
+## C-LI2022-004｜郊社禮
+
+- 英文術語：jiaoshe rituals、sacrifices to Heaven and Earth
+- 相關中文概念：祭天、祭地、西周禮制、天地並祀
+- 相關英文術語：ritual system、sacrificial rites
+- 關聯論文 ID：P20260628-LI2022
+- 關聯語用 ID：U20260628-LI2022-005、U20260628-LI2022-006、U20260628-LI2022-007
+- 補充說明：本文將郊社禮作為天地父母信仰的制度性材料。
+
+---
+
+## C-LI2022-005｜天人一德
+
+- 英文術語：unity of Heaven and human virtue、Heaven-human shared virtue
+- 相關中文概念：天人合一、天道、人道、乾坤
+- 相關英文術語：cosmic-ethical unity
+- 關聯論文 ID：P20260628-LI2022
+- 關聯語用 ID：U20260628-LI2022-009、U20260628-LI2022-010
+- 補充說明：本文用以說明天道與人道在儒家倫理中的合一結構。
+
+---
+
+## C-LI2022-006｜仁
+
+- 英文術語：ren、humaneness、benevolence
+- 相關中文概念：孝悌、親親、仁民、愛物
+- 相關英文術語：Confucian ethics、universal virtue
+- 關聯論文 ID：P20260628-LI2022
+- 關聯語用 ID：U20260628-LI2022-013、U20260628-LI2022-014、U20260628-LI2022-015
+- 補充說明：本文主張仁由親親出發，但可推擴至仁民愛物與普遍德性。
+
+---
+
+## C-LI2022-007｜親親—仁民—愛物
+
+- 英文術語：loving kin, caring for the people, and loving things
+- 相關中文概念：孝悌、仁、仁民愛物、民胞物與
+- 相關英文術語：extension of care、graded love、universal care
+- 關聯論文 ID：P20260628-LI2022
+- 關聯語用 ID：U20260628-LI2022-014、U20260628-LI2022-015
+- 補充說明：本文用以回應儒家倫理是否只是家族中心的問題，顯示由差等至普遍的推擴結構。
+
+---
+
+## C-LI2022-008｜萬物之靈
+
+- 英文術語：numinous among the ten thousand things、the most spiritual of all things
+- 相關中文概念：人為天地之心、心知、修身、天命之性
+- 相關英文術語：human distinctiveness、moral agency
+- 關聯論文 ID：P20260628-LI2022
+- 關聯語用 ID：U20260628-LI2022-011、U20260628-LI2022-012
+- 補充說明：本文第三節以此討論人在天地萬物中的特殊位置及其道德能力。
+
+---
+
+## C-LI2022-009｜民胞物與
+
+- 英文術語：all people are my siblings and all things are my companions
+- 相關中文概念：西銘、仁民愛物、萬物一體、理一分殊
+- 相關英文術語：cosmic kinship、ecological ethics
+- 關聯論文 ID：P20260628-LI2022
+- 關聯語用 ID：U20260628-LI2022-015、U20260628-LI2022-016
+- 補充說明：本文將張載《西銘》及朱熹詮釋作為儒家普遍德性與生態倫理的關鍵材料。
+
+---
+
+## C-LI2022-010｜理一分殊
+
+- 英文術語：one principle with diverse manifestations、principle is one, manifestations are many
+- 相關中文概念：一體而分殊、西銘、親疏差等、普遍仁愛
+- 相關英文術語：unity and differentiation、graded particularity
+- 關聯論文 ID：P20260628-LI2022
+- 關聯語用 ID：U20260628-LI2022-015、U20260628-LI2022-016
+- 補充說明：本文研究視野中涉及宋代理學如何同時保存一體性與分殊差等。
 
 ---

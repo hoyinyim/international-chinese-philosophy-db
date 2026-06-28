@@ -25,3 +25,6 @@ pdf/
 # Temporary files
 *.tmp
 *.bak
+.env
+__pycache__/
+*.pyc

@@ -34,6 +34,112 @@ Codex must not independently create or alter scholarly interpretations, academic
 7. Never remove existing data records without explicit user confirmation.
 8. Never change ID conventions without explicit user confirmation.
 
+## Scholarly Content Firewall
+
+Codex must treat this repository as an engineering and database-maintenance project, not as a scholarly interpretation project.
+
+### Absolute boundary
+
+Codex must not cross from engineering support into scholarly judgment.
+
+The following tasks are reserved for the user and ChatGPT-based scholarly analysis:
+
+1. reading journal articles;
+2. selecting academic usage phrases;
+3. judging whether a phrase is worth learning;
+4. explaining argumentative function;
+5. classifying scholarly usage categories;
+6. defining research horizon records;
+7. identifying core research questions;
+8. interpreting Chinese philosophical concepts;
+9. judging the significance of a paper;
+10. creating or revising concept-index content;
+11. filling missing scholarly metadata by inference;
+12. generating new academic claims, summaries, or interpretations.
+
+Codex may only handle these materials after the user has already supplied them in an explicit, structured form.
+
+### Permitted Codex work
+
+Codex may perform engineering tasks only:
+
+1. validate JSONL format;
+2. check schema compliance;
+3. check duplicate IDs;
+4. check missing required fields;
+5. convert user-provided text into structured JSONL;
+6. repair mechanical formatting errors;
+7. update scripts;
+8. update import workflows;
+9. update Supabase sync scripts;
+10. update GitHub Pages exports;
+11. create logs, reports, backups, and health checks;
+12. test database search and synchronization.
+
+### Prohibited Codex behavior
+
+Codex must never:
+
+1. invent paper titles, authors, publication years, journal names, DOI values, page ranges, or abstracts;
+2. invent original English phrases or quotations;
+3. invent Chinese explanations, argumentative functions, research methods, or research significance;
+4. fill empty scholarly fields by guessing;
+5. rewrite scholarly interpretations to make records look more complete;
+6. merge two records into a new interpretation unless the user explicitly instructs it;
+7. change usage categories or research categories based on its own judgment;
+8. modify `data/*.jsonl` scholarly content unless the user explicitly provides the intended content or asks for a mechanical correction;
+9. silently delete, overwrite, or normalize scholarly records;
+10. treat passing schema validation as proof that scholarly content is correct.
+
+### Required behavior when content is incomplete
+
+If Codex finds missing or ambiguous scholarly content, it must not fill the gap.
+
+It must instead produce a report using this format:
+
+```text
+SCHOLARLY CONTENT REVIEW NEEDED
+
+File:
+Record ID:
+Field:
+Problem:
+Why Codex cannot fix it:
+Suggested user action:
+```
+
+### Mechanical correction rule
+
+Codex may correct only mechanical issues, such as:
+
+1. invalid JSON escaping;
+2. missing commas;
+3. duplicate trailing spaces;
+4. inconsistent line endings;
+5. invalid UTF-8 encoding;
+6. filename or path errors;
+7. duplicate IDs when the correct ID rule is explicitly known;
+8. schema field ordering, if no content is changed.
+
+Codex must report every mechanical correction.
+
+### Commit rule
+
+Any commit that touches `data/*.jsonl`, `daily/*.txt`, or scholarly content exports must include a clear statement of whether the change is:
+
+1. mechanical formatting only;
+2. user-provided content import;
+3. script-generated export;
+4. schema or workflow update.
+
+If uncertain, Codex must not commit.
+
+### Final principle
+
+Codex is allowed to protect the database structure.
+
+Codex is not allowed to author the database's scholarly substance.
+
 ## Preferred Python command
 
 On this Windows machine, use:

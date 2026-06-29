@@ -1,0 +1,128 @@
+openapi: 3.1.0
+info:
+  title: International Chinese Philosophy Database Search API
+  version: 1.0.0
+  description: Search API for the International Chinese Philosophy Journal Database.
+
+servers:
+  - url: https://huufvwzqocfiinzlygbn.supabase.co
+
+paths:
+  /functions/v1/search:
+    post:
+      operationId: searchChinesePhilosophyDatabase
+      summary: Search the International Chinese Philosophy Database
+      description: Search academic usage records, research horizon records, concept records, or all retrieval chunks.
+      security:
+        - ApiKeyAuth: []
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              additionalProperties: false
+              required:
+                - query
+              properties:
+                query:
+                  type: string
+                  description: Search query. Can be Chinese or English.
+                mode:
+                  type: string
+                  enum:
+                    - all
+                    - usage
+                    - horizon
+                    - concepts
+                  default: all
+                  description: Search mode.
+                limit:
+                  type: integer
+                  minimum: 1
+                  maximum: 30
+                  default: 10
+                  description: Maximum number of results.
+            examples:
+              searchAll:
+                value:
+                  query: 勞思光
+                  mode: all
+                  limit: 10
+              searchUsage:
+                value:
+                  query: Far from
+                  mode: usage
+                  limit: 10
+              searchHorizon:
+                value:
+                  query: 儒家
+                  mode: horizon
+                  limit: 10
+              searchConcepts:
+                value:
+                  query: 天地
+                  mode: concepts
+                  limit: 10
+      responses:
+        "200":
+          description: Search results returned successfully.
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  query:
+                    type: string
+                  mode:
+                    type: string
+                  limit:
+                    type: integer
+                  count:
+                    type: integer
+                  results:
+                    type: array
+                    items:
+                      type: object
+                      additionalProperties: true
+                      properties:
+                        chunk_id:
+                          type: string
+                        source_type:
+                          type: string
+                        source_id:
+                          type: string
+                        paper_id:
+                          type: string
+                        title:
+                          type: string
+                        author:
+                          type: string
+                        category:
+                          type: string
+                        concepts:
+                          type: array
+                          items:
+                            type: string
+                        content:
+                          type: string
+                        metadata:
+                          type: object
+                          additionalProperties: true
+                        score:
+                          type: integer
+        "400":
+          description: Invalid request body or missing query.
+        "401":
+          description: Unauthorized. The X-GPT-API-Key header is missing or incorrect.
+        "405":
+          description: Method not allowed. Use POST.
+        "500":
+          description: Internal server error or Supabase RPC error.
+
+components:
+  securitySchemes:
+    ApiKeyAuth:
+      type: apiKey
+      in: header
+      name: X-GPT-API-Key

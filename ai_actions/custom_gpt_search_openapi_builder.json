@@ -1,0 +1,48 @@
+﻿{
+  "openapi": "3.0.3",
+  "info": {
+    "title": "ICP Database Search API",
+    "version": "1.0.0"
+  },
+  "servers": [
+    {
+      "url": "https://huufvwzqocfiinzlygbn.supabase.co/functions/v1"
+    }
+  ],
+  "paths": {
+    "/search": {
+      "post": {
+        "operationId": "searchChinesePhilosophyDatabase",
+        "summary": "Search Chinese philosophy database",
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "required": ["query"],
+                "properties": {
+                  "query": {
+                    "type": "string"
+                  },
+                  "mode": {
+                    "type": "string",
+                    "enum": ["all", "usage", "horizon", "concepts"]
+                  },
+                  "limit": {
+                    "type": "integer"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Successful search response"
+          }
+        }
+      }
+    }
+  }
+}

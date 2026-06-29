@@ -13,6 +13,7 @@ $TranscriptStarted = $false
 $AutoCommitPhaseStarted = $false
 $ReportWritten = $false
 $FailureMessage = ""
+$RunStatus = "Succeeded"
 
 $RepoRoot = (Resolve-Path -LiteralPath (Join-Path $PSScriptRoot "..")).Path
 $LogsDir = $null
@@ -189,6 +190,12 @@ function Set-DefaultNextSteps {
         return
     }
 
+    if ($script:RunStatus -eq "No work") {
+        $script:NextSteps += "No incoming .txt files were found, so no update steps were run."
+        $script:NextSteps += "Add new .txt files to incoming/ before the next daily update."
+        return
+    }
+
     if ($SkipSupabase.IsPresent) {
         $script:NextSteps += "Review local data, docs/data, and ai_exports changes."
         $script:NextSteps += "Run the workflow again without -SkipSupabase before relying on Supabase-backed search."
@@ -265,7 +272,7 @@ function Write-UpdateReport {
         $gitBlock = "(clean or no output)"
     }
 
-    $status = "Succeeded"
+    $status = $RunStatus
     if ($FailureMessage) {
         $status = "Failed"
     }
@@ -307,8 +314,8 @@ function Write-UpdateReport {
         "",
         "## Supabase",
         "",
-        "- Sync status: $SupabaseSyncStatus",
-        "- Search test status: $SupabaseSearchStatus",
+        "- Supabase sync: $SupabaseSyncStatus",
+        "- Supabase search test: $SupabaseSearchStatus",
         "",
         "## Git status short",
         "",
@@ -373,6 +380,29 @@ try {
     Write-Host "Log: $LogPath"
     Write-Host "Report: $ReportPath"
 
+    $IncomingDir = Join-Path $RepoRoot "incoming"
+    if (-not (Test-Path -LiteralPath $IncomingDir -PathType Container)) {
+        throw "incoming/ directory was not found."
+    }
+
+    $IncomingFileInfos = @(Get-ChildItem -LiteralPath $IncomingDir -Filter "*.txt" -File -ErrorAction SilentlyContinue)
+    if ($IncomingFileInfos.Count -eq 0) {
+        $RunStatus = "No work"
+        $DatabaseStats = Get-JsonlRecordCounts
+        $NewRecordsAdded = 0
+        $SupabaseSyncStatus = "Not run"
+        $SupabaseSearchStatus = "Not run"
+
+        Write-Host ""
+        Write-Host "No work / no incoming files." -ForegroundColor Yellow
+        Write-Host "No import, Supabase sync, commit, or push was attempted."
+
+        Write-UpdateReport
+        return
+    }
+
+    Write-Host "Found $($IncomingFileInfos.Count) .txt file(s) in incoming/."
+
     if (-not (Get-Command git -ErrorAction SilentlyContinue)) {
         throw "Git command was not found. Install Git or add it to PATH before running this task."
     }
@@ -389,18 +419,6 @@ try {
     if (($global:LASTEXITCODE -ne 0) -or (($insideGitRepoOutput | Out-String).Trim() -ne "true")) {
         throw "Current directory is not inside a Git repository."
     }
-
-    $IncomingDir = Join-Path $RepoRoot "incoming"
-    if (-not (Test-Path -LiteralPath $IncomingDir -PathType Container)) {
-        throw "incoming/ directory was not found."
-    }
-
-    $IncomingFileInfos = @(Get-ChildItem -LiteralPath $IncomingDir -Filter "*.txt" -File -ErrorAction SilentlyContinue)
-    if ($IncomingFileInfos.Count -eq 0) {
-        throw "No .txt files found in incoming/. Daily update stopped."
-    }
-
-    Write-Host "Found $($IncomingFileInfos.Count) .txt file(s) in incoming/."
 
     $BeforeCounts = Get-JsonlRecordCounts
 

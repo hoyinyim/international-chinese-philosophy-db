@@ -1,5 +1,5 @@
 ﻿Write-Host "STEP 1: Validate JSONL schema..." -ForegroundColor Cyan
-py scripts\validate_data.py
+py -3 scripts\validate_data.py
 
 if ($LASTEXITCODE -ne 0) {
     Write-Host ""
@@ -9,7 +9,7 @@ if ($LASTEXITCODE -ne 0) {
 
 Write-Host ""
 Write-Host "STEP 2: Check data integrity..." -ForegroundColor Cyan
-py scripts\check_integrity.py
+py -3 scripts\check_integrity.py
 
 if ($LASTEXITCODE -ne 0) {
     Write-Host ""
@@ -19,10 +19,10 @@ if ($LASTEXITCODE -ne 0) {
 
 Write-Host ""
 Write-Host "STEP 3: Build website data..." -ForegroundColor Cyan
-py scripts\build_site_data.py
+py -3 scripts\build_site_data.py
 Write-Host ""
 Write-Host "STEP 4: Build AI export corpus..." -ForegroundColor Cyan
-py scripts\build_ai_exports.py
+py -3 scripts\build_ai_exports.py
 
 if ($LASTEXITCODE -ne 0) {
     Write-Host ""
@@ -38,7 +38,7 @@ if ($LASTEXITCODE -ne 0) {
 
 Write-Host ""
 Write-Host "STEP 5: Show database summary..." -ForegroundColor Cyan
-py scripts\jsonl_summary.py
+py -3 scripts\jsonl_summary.py
 
 Write-Host ""
 Write-Host "STEP 6: Show Git status..." -ForegroundColor Cyan

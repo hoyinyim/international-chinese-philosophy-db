@@ -1,5 +1,5 @@
 Write-Host "STEP 1: Import incoming records..." -ForegroundColor Cyan
-py scripts\import_incoming_records.py
+py -3 scripts\import_incoming_records.py
 
 if ($LASTEXITCODE -ne 0) {
     Write-Host ""
